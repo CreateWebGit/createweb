@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.heroContainer {
+  background-color: #1c2893;
+  background-image: radial-gradient(circle at 0% 0%, #2296e5, transparent 30%),
+    radial-gradient(circle at 0% 100%, #1e94e5, transparent 10%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+
+.footerContainer {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.hr {
+  margin: 50px auto 50px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    RGBA(254, 94, 20, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.sloganContainer {
+  background-image: url('/assets/gcp.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.sloganContainerFilter {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sloganContainerFilter h2 {
+  margin: 100px 0px;
+  color: #fff;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .myShadow {
+    box-shadow: 0px 20px 21px -13px #b25d43;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .myShadowMobile {
+    box-shadow: #b25d43 0px 4px 12px;
+  }
+}
