@@ -5,12 +5,13 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import { Message_data } from '../context/context'
+import { cn } from '@/utils/utils'
 
 import Navbar from '../components/Navbar'
 import Accordion from '../components/Accordion'
 import Footer from '../components/Footer'
 
-import profilePic from '../../../public/assets/HeroComputor11.png'
+import profilePic from '../../../public/assets/HeroComputor1111111.png'
 import iconLandingpage from '../../../public/assets/iconLandingpage.png'
 import iconCMS from '../../../public/assets/iconCMS.png'
 import iconDevelopment from '../../../public/assets/iconDevelopment.png'
@@ -39,7 +40,7 @@ export default function Home() {
 
       <Navbar white={false} />
 
-      <div className="heroContainer pt-[100px] px-4 md:pt-[200px] h-[130vh] md:h-[90vh] z-10">
+      <div className="heroContainer pt-[100px] px-4 md:pt-[200px] h-[130vh] md:h-[90vh] z-50">
         <div className="block flex-row-reverse md:flex">
           <div className="w-full md:w-1/2">
             <h1 className="text-2xl text-center md:text-6xl font-bold text-white">
@@ -84,13 +85,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="relative w-full h-96 md:w-1/2 md:h-screen z-50">
+          <div className="relative w-full h-96 md:hidden">
             <Image
               src={profilePic}
               alt="Computor"
               fill={true}
               objectFit="contain"
-              className=" md:mt-[-200px]"
+              className=" md:mt-[-200px] z-50"
               priority
             />
           </div>
@@ -119,8 +120,23 @@ export default function Home() {
         </div>
       </div>
 
-      <main>
-        <section className="relative w-full flex flex-col justify-center items-center z-50 my-5">
+      <div
+        className={cn(
+          'hidden animatePic absolute mt-[-540px] w-full h-96 md:block md:w-1/2 md:h-screen z-50',
+        )}
+      >
+        <Image
+          src={profilePic}
+          alt="Computor"
+          fill={true}
+          objectFit="contain"
+          className=" md:mt-[-100px] z-50"
+          priority
+        />
+      </div>
+
+      <main className=" z-0">
+        <section className="relative w-full flex flex-col justify-center items-center z-40 my-5">
           <Image className="absolute left-0 mt-[-50px] ml-[-150px] md:ml-0" src={patternDark} />
           <Image className="absolute left-0 ml-[-150px] md:ml-0" src={patternLight} />
           {inLanguage === 'sv' ? (
@@ -151,7 +167,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-12 w-full md:w-[1000px] m-auto px-4">
+        <section className="mt-12 w-full md:w-[1200px] m-auto px-4">
           <div className="relative flex flex-col-reverse md:flex-row gap-4 mx-3">
             <div className="relative h-[80vh] w-full z-50 flex items-end justify-end md:w-1/2">
               <div className="absolute top-0 left-0 border-l-8 border-double border-t-8 border-l-orange-600 border-t-orange-600 rounded-tl-lg h-[300px] w-[300px]" />

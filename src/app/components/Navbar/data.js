@@ -1,7 +1,7 @@
 export const navLinks = [
   {
     id: 0,
-    name: 'Byrå',
+    name: 'Vår byrå',
     path: '/om-oss',
   },
   {

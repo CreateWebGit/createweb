@@ -49,6 +49,23 @@
   font-weight: bold;
 }
 
+.animatePic {
+  animation: ease-out 1s slideIn;
+}
+
+@keyframes slideIn {
+  from {
+    margin-left: -70px;
+    margin-top: -600px;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0px;
+    margin-top: -540px;
+    opacity: 100;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .myShadow {
     box-shadow: 0px 20px 21px -13px #b25d43;
