@@ -57,12 +57,12 @@ export default function Home() {
               )}
             </h1>
 
-            <h2 className="text-xl my-4 text-center md:text-2xl text-white">
-              {inLanguage === 'sv'
-                ? 'Skapa banbrytande digitala upplevelser'
-                : 'Crafting Cutting-Edge Digital Experiences'}
-            </h2>
             <div className="hidden md:block w-[450px] m-auto">
+              <h2 className="text-xl my-4 text-center md:text-2xl text-white">
+                {inLanguage === 'sv'
+                  ? 'Skapa banbrytande digitala upplevelser'
+                  : 'Crafting Cutting-Edge Digital Experiences'}
+              </h2>
               <p className="text-white">
                 {inLanguage === 'sv'
                   ? 'Createweb erbjuder professionell webbutveckling för företag i Stockholm och i hela Sverige. Vår erfarna webbutvecklare har kompetens att skapa skräddarsydda lösningar som uppfyller dina specifika behov.'
@@ -96,6 +96,11 @@ export default function Home() {
             />
           </div>
           <div className="block md:hidden">
+            <h2 className="text-xl my-4 text-center md:text-2xl text-white">
+              {inLanguage === 'sv'
+                ? 'Skapa banbrytande digitala upplevelser'
+                : 'Crafting Cutting-Edge Digital Experiences'}
+            </h2>
             <p className="text-white pt-4 pb-6">
               Createweb offers professional web development for companies in Stockholm and
               throughout Sweden. Our experienced web developers have the skills to create customized
