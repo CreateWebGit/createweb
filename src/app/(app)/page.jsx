@@ -167,7 +167,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-12 w-full md:w-[1200px] m-auto px-1">
+        <section className="mt-12 w-full md:w-[1200px] m-auto px-2">
           <div className="relative flex flex-col-reverse md:flex-row gap-4">
             <div className="relative pt-4 h-[80vh] w-full z-50 flex items-end justify-end md:w-1/2 md:pt-0">
               <div className="absolute top-0 left-0 border-l-8 border-double border-t-8 border-l-orange-600 border-t-orange-600 rounded-tl-lg h-[300px] w-[300px]" />
@@ -205,7 +205,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative flex justify-center items-center bg-[#BC47DD] w-[88%] h-[120px] top-[-55px] left-[50%] ml-[-42%] md:ml-[-44%] py-5 px-4 rounded-md text-2xl text-white text-center z-50">
+          <div className="relative flex justify-center items-center bg-[#BC47DD] w-[88%] top-[-85px] left-[50%] ml-[-44%] md:ml-[-44%] py-5 px-4 rounded-md text-2xl text-white text-center z-50">
             {inLanguage === 'sv'
               ? '“Vi har en passion i att få leverera högkvalitativt och användarvänligt teknik för att hjälpa våra kunder att nå sina mål”'
               : '“We have a passion for delivering high-quality and user-friendly technology to help our customers achieve their goals”'}
