@@ -167,11 +167,11 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-12 w-full md:w-[1200px] m-auto px-4">
-          <div className="relative flex flex-col-reverse md:flex-row gap-4 mx-3">
-            <div className="relative h-[80vh] w-full z-50 flex items-end justify-end md:w-1/2">
+        <section className="mt-12 w-full md:w-[1200px] m-auto px-1">
+          <div className="relative flex flex-col-reverse md:flex-row gap-4">
+            <div className="relative pt-4 h-[80vh] w-full z-50 flex items-end justify-end md:w-1/2 md:pt-0">
               <div className="absolute top-0 left-0 border-l-8 border-double border-t-8 border-l-orange-600 border-t-orange-600 rounded-tl-lg h-[300px] w-[300px]" />
-              <div className="relative h-[96%] w-[96%]">
+              <div className="relative h-full mx-4 w-full md:h-[96%] md:w-[96%] md:mx-0">
                 <Image
                   src={aboutImage}
                   alt="Computor"
