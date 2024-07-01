@@ -53,6 +53,128 @@
   animation: ease-out 1s slideIn;
 }
 
+/*****************************
+**** Contact ***************
+*****************************/
+
+.styledInput {
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+
+fieldset {
+  position: relative;
+}
+
+form {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  height: 35px;
+  padding: 7px;
+  outline: none;
+}
+
+label {
+  color: #999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.2em;
+  font-weight: 500;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  pointer-events: none;
+}
+
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  max-height: 100px;
+  min-height: 100px;
+  padding: 7px;
+  outline: none;
+}
+
+input[type='submit'] {
+  margin-top: 2rem;
+  cursor: pointer;
+  background: rgb(249, 105, 14);
+  color: white;
+  border: none;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  margin-right: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: 'all 0.2s ease-in-out';
+  border: 'none';
+  border-bottom: 1px solid #cdcdcd;
+  padding: 0.3em 0.5em 0.2em 0em;
+  text-decoration: none;
+  outline: 0;
+  line-height: 1em;
+  margin: 0;
+  width: 100%;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: black;
+}
+
+input:focus ~ label,
+input[type='text']:valid ~ label,
+input:not(:placeholder-shown) ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: -1.6rem;
+  position: absolute;
+  font-size: 1em;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type='text']:focus ~ div,
+input[type='email']:focus ~ div,
+textarea:focus ~ div {
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+textarea:focus {
+  border-bottom-width: 0px;
+}
+
+.styledInput div {
+  height: 2px;
+  width: 0%;
+  background-color: #316aff;
+  position: absolute;
+  bottom: 0;
+}
+
 @keyframes slideIn {
   from {
     margin-left: -70px;
