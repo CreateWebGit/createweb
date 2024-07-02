@@ -31,7 +31,7 @@ const Footer = ({ inLanguage }) => {
         </div>
       </div>
       <div className="w-full md:w-[1200px] m-auto px-4">
-        <div className="h-[50px] w-[180px] absolute -right-4 mt-[-150px] md:mt-[-140px] rotate-[-18deg] sm:rotate-[-8deg] md:rotate-[-4deg] bg-[#00E1FF] z-50"></div>
+        <div className="h-[50px] w-[180px] absolute -right-4 mt-[-170px] md:mt-[-140px] rotate-[-20deg] sm:rotate-[-8deg] md:rotate-[-4deg] bg-[#00E1FF] z-50"></div>
         <div className="mb-8 mt-8">
           <Image className="m-auto md:m-0" src={logo} width={300} height={80} />
         </div>
