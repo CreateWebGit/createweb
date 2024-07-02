@@ -10,7 +10,8 @@
 }
 
 .footerContainer {
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  /*clip-path: polygon(-100vmax -100vmax, 100% -100vmax, 100% 100%, -100vmax -50vmax);*/
 }
 
 .hr {

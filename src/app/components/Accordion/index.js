@@ -45,12 +45,12 @@ const Accordion = ({ inLanguage }) => {
       {data.map((item, index) => {
         return (
           <div
-            className="relative border-b border-[#ccc]  w-full flex flex-col justify-center"
+            className="relative py-6 border-b border-[#ccc]  w-full flex flex-col justify-center"
             key={index}
             onClick={() => handleClick(index)}
           >
-            <div className="flex flex-row py-8 justify-between items-center cursor-pointer  h-full">
-              <div className="flex justify-center items-center py-1">
+            <div className="flex flex-row  justify-between items-center cursor-pointer  h-full">
+              <div className="flex justify-center items-center">
                 <Image src={item.icon} width={64} height={64} />
                 <div className="ml-6 text-xl">
                   {inLanguage === 'sv' ? item.title : item.titleEng}
@@ -64,15 +64,15 @@ const Accordion = ({ inLanguage }) => {
                 )}
               </div>
             </div>
-            <p
+            <div
               className={
                 openAccordion === index
-                  ? 'h-[200px] overflow-hidden  mr-10 ml-24 transition-all duration-300'
-                  : 'h-0 overflow-hidden  mr-10 ml-24 transition-all duration-300'
+                  ? ' max-h-[500px] overflow-hidden  mr-10 ml-24 pb-4 transition-[max-height] duration-500'
+                  : 'max-h-[0px] overflow-hidden  mr-10 ml-24 pb-0 transition-[max-height] duration-500'
               }
             >
               {inLanguage === 'sv' ? item.text : item.textEng}
-            </p>
+            </div>
           </div>
         )
       })}

@@ -257,7 +257,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="bg-[#EAF7FE] py-12 px-4">
+        <section className="bg-[#EAF7FE] py-12 px-2">
           <div className="flex flex-col-reverse md:flex md:flex-row md:w-[1200px] m-auto">
             <div className="w-full md:w-1/2 pr-8">
               <div className="hidden md:block">
@@ -288,7 +288,7 @@ export default function Home() {
               </div>
 
               <div className="relative">
-                <div className="block md:hidden">
+                <div className="block mb-8 md:hidden">
                   <h3 className="text-xl text-[#1B45B4]">
                     {inLanguage === 'sv' ? 'OM OSS' : 'ABOUT US'}
                   </h3>
@@ -301,9 +301,9 @@ export default function Home() {
                       : 'What make us distinguished from others!'}
                   </p>
                 </div>
-                <div className="relative h-[80vh]  z-50 flex flex-row md:flex md:flex-row items-end justify-start ">
+                <div className="relative h-[80vh] pt-4 z-50 flex flex-row md:flex md:flex-row items-end justify-start ">
                   <div className="absolute top-0 right-0 border-r-8 border-double border-t-8 border-r-orange-600 border-t-orange-600 rounded-tr-lg h-[300px] w-[300px]" />
-                  <div className="relative h-[96%] w-[96%]">
+                  <div className="relative h-full mx-4 w-full md:h-[96%] md:w-[96%]">
                     <Image
                       src="/assets/whyuspic1.png"
                       alt="Computor"
