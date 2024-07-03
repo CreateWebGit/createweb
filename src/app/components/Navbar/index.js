@@ -108,7 +108,7 @@ const Navbar = ({ topbar, white }) => {
           </div>
         </div>
 
-        <div className="flex justify-between items-center m-auto h-6 md:h-12 lg:w-[1200px]">
+        <div className="flex justify-between items-center m-auto h-6 md:h-12 lg:w-[1200px] ">
           <Link href={'/'} className="relative w-44 h-14 md:w-52 md:h-16">
             <Image
               className="logo"
