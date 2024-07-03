@@ -29,7 +29,7 @@
 .sloganContainer {
   background-image: url('/assets/gcp.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: initial;
   background-position: center;
   background-size: cover;
 }

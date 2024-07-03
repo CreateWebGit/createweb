@@ -85,7 +85,7 @@ const pageAbout = () => {
                mx-4 px-16 py-10"
               >
                 <FaHandshake size={110} color={'#C13A2B'} />
-                <p className="text-xl tracking-[2px]">
+                <p className="text-xl text-center tracking-[2px]">
                   {inLanguage === 'sv' ? 'VI TAR DET PÅ ALVAR' : 'WE TAKE IT SERIOUSLY'}
                 </p>
                 <p className="">{inLanguage === 'sv' ? 'Ansvar' : 'Responsibility'}</p>
@@ -97,7 +97,7 @@ const pageAbout = () => {
                mx-4 px-16 py-10"
               >
                 <FaAllergies size={110} color={'#C13A2B'} />
-                <p className="text-xl tracking-[2px]">
+                <p className="text-xl text-center tracking-[2px]">
                   {inLanguage === 'sv' ? 'VI ÄR DEDIKERADE' : 'WE ARE DEDICATED'}
                 </p>
                 <p className="">{inLanguage === 'sv' ? 'Kreativitet' : 'Creativity'}</p>
@@ -109,7 +109,7 @@ const pageAbout = () => {
                mx-4 px-16 py-10"
               >
                 <FaRegEye size={110} color={'#C13A2B'} />
-                <p className="text-xl tracking-[2px]">
+                <p className="text-xl text-center tracking-[2px]">
                   {inLanguage === 'sv' ? 'VI ÄR FOKUSERADE' : 'WE ARE FOCUSED'}
                 </p>
                 <p className="">{inLanguage === 'sv' ? 'Kvalitet' : 'Quality'}</p>
