@@ -152,19 +152,19 @@ export default function Home() {
 
           <div className="flex justify-center items-center h-10 m-0 p-0 z-50">
             <Link href="https://nextjs.org" target="_blank">
-              <div className="flex flex-row justify-center items-center mx-5 bg-white shadow-md z-50 p-2">
+              <div className="flex flex-row justify-center items-center mx-3 md:mx-5 bg-white shadow-md z-50 p-2">
                 <Image src={brandNextJS} width={25} />
                 <span className="ml-1">Next JS</span>
               </div>
             </Link>
             <Link href="https://react.dev" target="_blank">
-              <div className="flex flex-row justify-center items-center mx-5 bg-white shadow-md z-50 p-2">
+              <div className="flex flex-row justify-center items-center mx-3 md:mx-5 bg-white shadow-md z-50 p-2">
                 <Image src={brandReact} />
                 <span className="ml-1">React</span>
               </div>
             </Link>
             <Link href="https://payloadcms.com" target="_blank">
-              <div className="flex flex-row justify-center items-center mx-5 bg-white shadow-md z-50 p-2">
+              <div className="flex flex-row justify-center items-center mx-3 md:mx-5 bg-white shadow-md z-50 p-2">
                 <Image src={brandPayload} />
                 <span className="ml-1">PayloadCMS</span>
               </div>
@@ -222,7 +222,7 @@ export default function Home() {
             <h3 className="text-xl text-[#1B45B4]">TJÄNSTER</h3>
             <h2 className="text-2xl mb-5">Vi är hängivna till den bästa webbupplevelsen</h2>
             <div className="block md:flex gap-8 justify-between">
-              <div className="h-[250px] rounded-lg text-center text-white p-12 bg-[#1C2C99]">
+              <div className="h-[250px] rounded-lg text-center text-white p-12 mb-8 md:mb-0 bg-[#1C2C99]">
                 <Image src={iconDevelopment} className="m-auto" />
                 <h3 className="text-xl mt-1">
                   {inLanguage === 'sv' ? 'Webbutveckling' : 'Webdevelopment'}
@@ -234,7 +234,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="h-[250px] rounded-lg text-center text-slate-700 p-12 bg-white">
+              <div className="h-[250px] rounded-lg text-center text-slate-700 p-12 mb-8 md:mb-0 bg-white">
                 <Image src={iconCMS} className="m-auto" />
                 <h3 className="text-xl mt-1">CMS</h3>
                 <p>
@@ -244,7 +244,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="h-[250px] rounded-lg text-center text-slate-700 p-12 bg-white">
+              <div className="h-[250px] rounded-lg text-center text-slate-700 p-12  bg-white">
                 <Image src={iconLandingpage} className="m-auto" />
                 <h3 className="text-xl mt-1">
                   {inLanguage === 'sv' ? 'Sökordsoptimering' : 'Search Engine Optimization'}
@@ -303,7 +303,7 @@ export default function Home() {
                 </div>
                 <div className="relative h-[80vh] pt-4 z-50 flex flex-row md:flex md:flex-row items-end justify-start ">
                   <div className="absolute top-0 right-0 border-r-8 border-double border-t-8 border-r-orange-600 border-t-orange-600 rounded-tr-lg h-[300px] w-[300px]" />
-                  <div className="relative h-full mx-4 w-full md:h-[96%] md:w-[96%]">
+                  <div className="relative h-full mx-4 w-full md:h-[96%] md:w-[96%] md:mx-0">
                     <Image
                       src="/assets/whyuspic1.png"
                       alt="Computor"
