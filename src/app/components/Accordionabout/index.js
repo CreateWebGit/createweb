@@ -72,8 +72,8 @@ const Accordion = ({ inLanguage }) => {
             <p
               className={
                 openAccordion === index
-                  ? 'h-[200px] overflow-hidden  mr-10 ml-24 transition-all duration-300'
-                  : 'h-0 overflow-hidden  mr-10 ml-24 transition-all duration-300'
+                  ? 'h-[250px] overflow-hidden  mr-10 ml-16 transition-all duration-300'
+                  : 'h-[0px] overflow-hidden  mr-10 ml-16 transition-all duration-300'
               }
             >
               {inLanguage === 'sv' ? item.text : item.textEng}

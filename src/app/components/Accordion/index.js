@@ -67,7 +67,7 @@ const Accordion = ({ inLanguage }) => {
             <div
               className={
                 openAccordion === index
-                  ? ' max-h-[500px] overflow-hidden  mr-10 ml-24 pb-4 transition-[max-height] duration-500'
+                  ? 'max-h-[500px] overflow-hidden  mr-10 ml-24 pb-4 transition-[max-height] duration-500'
                   : 'max-h-[0px] overflow-hidden  mr-10 ml-24 pb-0 transition-[max-height] duration-500'
               }
             >

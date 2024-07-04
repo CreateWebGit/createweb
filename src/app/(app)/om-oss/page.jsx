@@ -14,6 +14,7 @@ import { useScrollInfo } from '@faceless-ui/scroll-info'
 
 import aboutpic from '../../../../public/assets/aboutpic.png'
 import aboutImage from '../../../../public/assets/aboutPic.jpg'
+import newHeight from '../../../../public/about/newHeight.jpg'
 import aboutpic123 from '../../../../public/assets/about123.png'
 import skyStudio from '../../../../public/assets/skye-studios.jpg'
 import bg from '../../../../public/assets/gcp.jpg'
@@ -36,7 +37,7 @@ const pageAbout = () => {
 
       <main>
         <section className="bg-white">
-          <div className=" w-full md:w-[1200px] m-auto px-2">
+          <div className=" w-full md:w-[1200px] m-auto px-4">
             <div className="relative flex flex-col-reverse mx-0 md:flex-row gap-4 md:mx-3">
               <div className="relative pt-4 h-[80vh] w-full z-50 flex items-end justify-end md:w-1/2">
                 <div className="absolute top-0 left-0 border-l-8 border-double border-t-8 border-l-orange-600 border-t-orange-600 rounded-tl-lg h-[300px] w-[300px]" />
@@ -52,7 +53,7 @@ const pageAbout = () => {
               </div>
 
               <div className="flex flex-col gap-2 justify-center items-start w-full md:w-1/2">
-                <h3 className="text-xl text-[#1B45B4]">OM OSS </h3>
+                <h3 className="text-2xl text-[#1B45B4]">OM OSS </h3>
                 <h2 className="text-3xl">
                   Vi stödjer nystartade samt etablarade företag att få växa i sin verksamhet
                 </h2>
@@ -117,7 +118,7 @@ const pageAbout = () => {
         </section>
 
         <section className=" bg-white">
-          <div className="py-12 w-full md:w-[1200px] m-auto px-2">
+          <div className="py-12 w-full md:w-[1200px] m-auto px-4">
             <div className="relative flex flex-col-reverse md:flex-row gap-0 mx-0 md:gap-4 md:mx-3">
               <div className="flex flex-col gap-0 md:gap-2 justify-center items-start md:items-end text-justify w-full md:w-1/2">
                 <h3 className="text-xl text-[#1B45B4]">
@@ -181,12 +182,12 @@ const pageAbout = () => {
         </section>
         <section className=" bg-white">
           <div className="py-24 w-full md:w-[1200px] m-auto px-4">
-            <div className="relative flex flex-col-reverse md:flex-row gap-4 mx-3">
-              <div className="relative h-[80vh] w-full z-50 flex items-end justify-end md:w-1/2">
+            <div className="relative flex flex-col-reverse md:flex-row gap-4">
+              <div className="hidden relative h-[80vh] w-full z-50 items-end justify-end md:w-1/2 md:flex">
                 <div className="absolute top-0 left-0 border-l-8 border-double border-t-8 border-l-orange-600 border-t-orange-600 rounded-tl-lg h-[300px] w-[300px]" />
                 <div className="relative h-[96%] w-[96%]">
                   <Image
-                    src={aboutImage}
+                    src={newHeight}
                     alt="Computor"
                     fill={true}
                     objectFit="cover"
@@ -198,8 +199,21 @@ const pageAbout = () => {
               <div className="flex flex-col gap-2 justify-center items-start w-full md:w-1/2">
                 <h3 className="text-xl text-[#1B45B4]">OM OSS </h3>
                 <h2 className="text-3xl">
-                  Vi stödjer nystartade samt etablarade företag att få växa i sin verksamhet
+                  Vi dedikerar oss till att ta er verksamhet till nya höjder!
                 </h2>
+
+                <div className="flex relative h-[40vh] w-full z-50 items-end justify-end md:w-1/2 md:hidden">
+                  <div className="absolute top-0 left-0 border-l-8 border-double border-t-8 border-l-orange-600 border-t-orange-600 rounded-tl-lg h-[200px] w-[200px]" />
+                  <div className="relative h-[96%] w-[96%]">
+                    <Image
+                      src={newHeight}
+                      alt="Computor"
+                      fill={true}
+                      objectFit="cover"
+                      className="rounded-lg"
+                    />
+                  </div>
+                </div>
 
                 <Accordion inLanguage={inLanguage} />
               </div>
