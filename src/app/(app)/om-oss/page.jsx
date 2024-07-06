@@ -38,8 +38,8 @@ const pageAbout = () => {
       <main>
         <section className="bg-white">
           <div className=" w-full md:w-[1200px] m-auto px-4">
-            <div className="relative flex flex-col-reverse mx-0 md:flex-row gap-4 md:mx-3">
-              <div className="relative pt-4 h-[80vh] w-full z-50 flex items-end justify-end md:w-1/2">
+            <div className="relative flex flex-col-reverse mx-0 pb-8 md:flex-row gap-4 md:mx-3 md:pb-0">
+              <div className="hidden relative pt-4 h-[80vh] w-full z-50 items-end justify-end md:w-1/2 md:flex">
                 <div className="absolute top-0 left-0 border-l-8 border-double border-t-8 border-l-orange-600 border-t-orange-600 rounded-tl-lg h-[300px] w-[300px]" />
                 <div className="relative w-full h-full mx-4 md:h-[96%] md:w-[96%] md:mx-0">
                   <Image
@@ -57,7 +57,18 @@ const pageAbout = () => {
                 <h2 className="text-3xl">
                   Vi stödjer nystartade samt etablarade företag att få växa i sin verksamhet
                 </h2>
-
+                <div className="flex relative pt-4 h-[40vh] w-full z-50 items-end justify-end md:w-1/2 md:hidden">
+                  <div className="absolute top-0 left-0 border-l-8 border-double border-t-8 border-l-orange-600 border-t-orange-600 rounded-tl-lg h-[200px] w-[200px]" />
+                  <div className="relative w-full h-full mx-4 md:h-[96%] md:w-[96%] md:mx-0">
+                    <Image
+                      src={aboutImage}
+                      alt="Computor"
+                      fill={true}
+                      objectFit="cover"
+                      className="rounded-lg"
+                    />
+                  </div>
+                </div>
                 <p>
                   CreateWeb är ett webbutvecklar företag som nu expandrar snabbt. Vi har stor
                   ambition till att alltid ligga steget före, så att vi kan tillhandahålla 100% av
@@ -67,7 +78,7 @@ const pageAbout = () => {
               </div>
             </div>
 
-            <div className="relative flex justify-center items-center bg-[#BC47DD] w-[88%] top-[-95px] left-[50%] ml-[-44%] md:ml-[-44%] py-5 px-4 rounded-md text-2xl text-white text-center z-50">
+            <div className="hidden relative justify-center items-center bg-[#BC47DD] w-[88%] top-[-95px] left-[50%] ml-[-44%] md:ml-[-44%] py-5 px-4 rounded-md text-2xl text-white text-center z-50 md:flex">
               {inLanguage === 'sv'
                 ? '“Vi har en passion i att få leverera högkvalitativt och användarvänligt teknik för att hjälpa våra kunder att nå sina mål”'
                 : '“We have a passion for delivering high-quality and user-friendly technology to help our customers achieve their goals”'}

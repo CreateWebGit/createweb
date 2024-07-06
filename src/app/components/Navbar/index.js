@@ -117,8 +117,75 @@ const Navbar = ({ topbar, white }) => {
               layout="fill"
             />
           </Link>
-          <div>
-            <div className="flex justify-end">
+          <div className="flex items-center">
+            <div className="flex relative justify-between items-center z-50 mr-8 md:hidden">
+              <>
+                <div
+                  className="flex relative justify-between items-center"
+                  onClick={() => setShowLanguage(!isShowLanguage)}
+                >
+                  {inLanguage === 'sv' ? (
+                    <ReactCountryFlag
+                      className="emojiFlag"
+                      countryCode="SE"
+                      style={{
+                        fontSize: '2em',
+                        lineHeight: '2em',
+                      }}
+                      aria-label="United States"
+                    />
+                  ) : (
+                    <ReactCountryFlag
+                      className="emojiFlag"
+                      countryCode="GB"
+                      style={{
+                        fontSize: '2em',
+                        lineHeight: '2em',
+                      }}
+                      aria-label="United States"
+                    />
+                  )}
+                  <MdKeyboardArrowDown size={25} color={white ? '#000' : '#fff'} />
+                </div>
+                {isShowLanguage ? (
+                  <>
+                    <div className="absolute top-[75px] left-[-15px] text-white bg-[#897B8E] p-3 z-50">
+                      <div
+                        className="flex relative justify-between items-center px-2"
+                        onClick={handleLangSv}
+                      >
+                        <ReactCountryFlag
+                          className="emojiFlag"
+                          countryCode="SE"
+                          style={{
+                            fontSize: '2em',
+                          }}
+                          aria-label="United States"
+                        />
+                        <span className="ml-1">{inLanguage === 'sv' ? 'Svenska' : 'Swedish'}</span>
+                      </div>
+                      <div
+                        className="flex relative justify-between items-center px-2"
+                        onClick={handleLangEng}
+                      >
+                        <ReactCountryFlag
+                          className="emojiFlag"
+                          countryCode="GB"
+                          style={{
+                            fontSize: '2em',
+                          }}
+                          aria-label="United States"
+                        />
+                        <span className="ml-1">{inLanguage === 'sv' ? 'Engelska' : 'English'}</span>
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  ''
+                )}
+              </>
+            </div>
+            <div className="hidden justify-end md:flex">
               <div className="pr-5 cursor-pointer" onClick={handleLangSv}>
                 <ReactCountryFlag
                   className="emojiFlag"
@@ -231,9 +298,9 @@ const Navbar = ({ topbar, white }) => {
                 )
               })}
             </ul>
-          </div>
-          <div onClick={handleNav} className="block z-50 cursor-pointer md:hidden">
-            {white ? <AiOutlineMenu size={25} /> : <AiOutlineMenu size={25} color="#fff" />}
+            <div onClick={handleNav} className="block z-50 cursor-pointer md:hidden">
+              {white ? <AiOutlineMenu size={35} /> : <AiOutlineMenu size={35} color="#fff" />}
+            </div>
           </div>
         </div>
       </div>
