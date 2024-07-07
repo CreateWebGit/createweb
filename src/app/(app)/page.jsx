@@ -172,48 +172,61 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-12 w-full md:w-[1200px] m-auto px-2">
-          <div className="relative flex flex-col-reverse md:flex-row gap-4">
-            <div className="relative pt-4 h-[80vh] w-full z-50 flex items-end justify-end md:w-1/2 md:pt-0">
-              <div className="absolute top-0 left-0 border-l-8 border-double border-t-8 border-l-orange-600 border-t-orange-600 rounded-tl-lg h-[300px] w-[300px]" />
-              <div className="relative h-full mx-4 w-full md:h-[96%] md:w-[96%] md:mx-0">
-                <Image
-                  src={aboutImage}
-                  alt="Computor"
-                  fill={true}
-                  objectFit="cover"
-                  className="rounded-lg"
-                />
+        <section className="bg-white">
+          <div className=" w-full md:w-[1200px] m-auto px-4">
+            <div className="relative flex flex-col-reverse mx-0 pb-8 md:flex-row gap-4 md:mx-3 md:pb-0">
+              <div className="hidden relative pt-4 h-[80vh] w-full z-50 items-end justify-end md:w-1/2 md:flex">
+                <div className="absolute top-0 left-0 border-l-8 border-double border-t-8 border-l-orange-600 border-t-orange-600 rounded-tl-lg h-[300px] w-[300px]" />
+                <div className="relative w-full h-full mx-4 md:h-[96%] md:w-[96%] md:mx-0">
+                  <Image
+                    src={aboutImage}
+                    alt="Computor"
+                    fill={true}
+                    objectFit="cover"
+                    className="rounded-lg"
+                  />
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-2 justify-center items-start w-full md:w-1/2">
+                <h3 className="text-2xl text-[#1B45B4]">OM OSS </h3>
+                <h2 className="text-3xl">
+                  Vi stödjer nystartade samt etablarade företag att få växa i sin verksamhet
+                </h2>
+                <div className="flex relative pt-4 h-[40vh] w-full z-50 items-end justify-end md:w-1/2 md:hidden">
+                  <div className="absolute top-0 left-0 border-l-8 border-double border-t-8 border-l-orange-600 border-t-orange-600 rounded-tl-lg h-[200px] w-[200px]" />
+                  <div className="relative w-full h-full mx-4 md:h-[96%] md:w-[96%] md:mx-0">
+                    <Image
+                      src={aboutImage}
+                      alt="Computor"
+                      fill={true}
+                      objectFit="cover"
+                      className="rounded-lg"
+                    />
+                  </div>
+                </div>
+                <p>
+                  CreateWeb är ett webbutvecklar företag som nu expandrar snabbt. Vi har stor
+                  ambition till att alltid ligga steget före, så att vi kan tillhandahålla 100% av
+                  vad vi hävdar. Vårt huvudfokus är att skapa bästa webbuplevelsen, med högt
+                  kompetenta utvecklare och designer, för individer och företag.
+                </p>
+                <div className="flex flex-col justify-end items-end my-4">
+                  <Link
+                    href={'/om-oss'}
+                    className=" inline-block bg-gradient-to-r from-[#9F3CD7] to-[#BC47DD] rounded-md shadow-xl text-white cursor-pointer text-sm m-1 py-2 px-3 text-center"
+                  >
+                    Läs mer
+                  </Link>
+                </div>
               </div>
             </div>
 
-            <div className="flex flex-col gap-2 justify-center items-start w-full md:w-1/2">
-              <h3 className="text-xl text-[#1B45B4]">OM OSS </h3>
-              <h2 className="text-3xl">
-                Vi stödjer nystartade samt etablarade företag att få växa i sin verksamhet
-              </h2>
-
-              <p>
-                CreateWeb är ett webbutvecklar företag som nu expandrar snabbt. Vi har stor ambition
-                till att alltid ligga steget före, så att vi kan tillhandahålla 100% av vad vi
-                hävdar. Vårt huvudfokus är att skapa bästa webbuplevelsen, med högt kompetenta
-                utvecklare och designer, för individer och företag.
-              </p>
-              <div className="my-4">
-                <Link
-                  href={'/om-oss'}
-                  className="bg-gradient-to-r from-[#9F3CD7] to-[#BC47DD] rounded-md shadow-xl text-white cursor-pointer text-sm m-1 py-2 px-3 text-center"
-                >
-                  Läs mer
-                </Link>
-              </div>
+            <div className="hidden relative justify-center items-center bg-[#BC47DD] w-[88%] top-[-95px] left-[50%] ml-[-44%] md:ml-[-44%] py-5 px-4 rounded-md text-2xl text-white text-center z-50 md:flex">
+              {inLanguage === 'sv'
+                ? '“Vi har en passion i att få leverera högkvalitativt och användarvänligt teknik för att hjälpa våra kunder att nå sina mål”'
+                : '“We have a passion for delivering high-quality and user-friendly technology to help our customers achieve their goals”'}
             </div>
-          </div>
-
-          <div className="relative flex justify-center items-center bg-[#BC47DD] w-[88%] top-[-85px] left-[50%] ml-[-44%] md:ml-[-44%] py-5 px-4 rounded-md text-2xl text-white text-center z-50">
-            {inLanguage === 'sv'
-              ? '“Vi har en passion i att få leverera högkvalitativt och användarvänligt teknik för att hjälpa våra kunder att nå sina mål”'
-              : '“We have a passion for delivering high-quality and user-friendly technology to help our customers achieve their goals”'}
           </div>
         </section>
 

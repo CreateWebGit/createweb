@@ -185,49 +185,107 @@ const Navbar = ({ topbar, white }) => {
                 )}
               </>
             </div>
-            <div className="hidden justify-end md:flex">
-              <div className="pr-5 cursor-pointer" onClick={handleLangSv}>
-                <ReactCountryFlag
-                  className="emojiFlag"
-                  countryCode="SE"
-                  style={{
-                    fontSize: '2em',
-                    lineHeight: '2em',
-                  }}
-                  aria-label="United States"
-                />
+            <div className="hidden md:flex flex-col">
+              <div className="flex justify-end gap-2">
+                <div className="cursor-pointer" onClick={handleLangSv}>
+                  <ReactCountryFlag
+                    className="emojiFlag"
+                    countryCode="SE"
+                    style={{
+                      fontSize: '2em',
+                      lineHeight: '2em',
+                    }}
+                    aria-label="United States"
+                  />
+                </div>
+                <div className="cursor-pointer" onClick={handleLangEng}>
+                  <ReactCountryFlag
+                    className="emojiFlag"
+                    countryCode="GB"
+                    style={{
+                      fontSize: '2em',
+                      lineHeight: '2em',
+                    }}
+                    aria-label="United States"
+                  />
+                </div>
               </div>
-              <div className="pr-5 cursor-pointer" onClick={handleLangEng}>
-                <ReactCountryFlag
-                  className="emojiFlag"
-                  countryCode="GB"
-                  style={{
-                    fontSize: '2em',
-                    lineHeight: '2em',
-                  }}
-                  aria-label="United States"
-                />
-              </div>
-            </div>
-            <ul className="hidden md:flex list-none">
-              {navLinks.map((link) => {
-                return (
-                  <>
-                    {link.sublinks ? (
-                      <div
-                        className="relative ml-5"
-                        onMouseEnter={() => setSublinks(true)}
-                        onMouseLeave={() => setSublinks(false)}
-                      >
-                        <div className="flex items-center">
-                          <li>
+              <ul className="flex list-none">
+                {navLinks.map((link) => {
+                  return (
+                    <>
+                      {link.sublinks ? (
+                        <div
+                          className="relative ml-5"
+                          onMouseEnter={() => setSublinks(true)}
+                          onMouseLeave={() => setSublinks(false)}
+                        >
+                          <div className="flex items-center">
+                            <li>
+                              <Link legacyBehavior key={link.id} href={link.path}>
+                                <a
+                                  className={cn(
+                                    'no-underline text-white before:absolute before:w-full before:h-2 before:bottom-0 before:left-0 before:bg-orange-500 before:duration-300 before:ease-in-out',
+                                    router.pathname === link.path
+                                      ? 'before:scale-x-100'
+                                      : 'before:scale-x-0 hover:scale-x-100',
+                                    white ? 'text-slate-600' : 'text-white',
+                                  )}
+                                >
+                                  {link.name}
+                                </a>
+                              </Link>
+                            </li>
+                            <MdKeyboardArrowDown color={white ? '#333' : '#fff'} />
+                          </div>
+
+                          <div
+                            className={cn(
+                              'absolute w-56  ease-in duration-300',
+                              isSublinks ? ' opacity-100 pt-4' : 'opacity-0 pt-6',
+                            )}
+                          >
+                            <div
+                              className={cn(
+                                'bg-white pl-4 pt-2 rounded-b-md border-b border-l border-r delay-300',
+                                isSublinks ? ' block' : ' hidden',
+                              )}
+                            >
+                              {link.sublinks.map((sublink) => {
+                                return (
+                                  <>
+                                    <div className="relative inline-block mb-2 ease-in duration-300">
+                                      <Link legacyBehavior key={sublink.id} href={sublink.path}>
+                                        <a
+                                          className={cn(
+                                            "no-underline  before:content-[''] before:absolute before:w-full before:h-[2px] before:bottom-0 before:top-6 before:rounded-md before:left-0 before:bg-orange-500 before:duration-300 before:ease-in-out",
+                                            pathname === sublink.path
+                                              ? 'before:scale-x-100'
+                                              : 'before:scale-x-0 before:hover:scale-x-100',
+                                            white ? 'text-slate-600' : 'text-slate-600',
+                                          )}
+                                        >
+                                          {sublink.name}
+                                        </a>
+                                      </Link>
+                                    </div>
+                                    <br />
+                                  </>
+                                )
+                              })}
+                            </div>
+                          </div>
+                        </div>
+                      ) : (
+                        <div>
+                          <li className="flex items-center relative ml-5 cursor-pointer">
                             <Link legacyBehavior key={link.id} href={link.path}>
                               <a
                                 className={cn(
-                                  'no-underline text-white before:absolute before:w-full before:h-2 before:bottom-0 before:left-0 before:bg-orange-500 before:duration-300 before:ease-in-out',
-                                  router.pathname === link.path
+                                  "no-underline  before:content-[''] before:absolute before:w-full before:h-[2px] before:bottom-0 before:top-6 before:rounded-md before:left-0 before:bg-orange-500 before:duration-300 before:ease-in-out",
+                                  pathname === link.path
                                     ? 'before:scale-x-100'
-                                    : 'before:scale-x-0 hover:scale-x-100',
+                                    : 'before:scale-x-0 before:hover:scale-x-100',
                                   white ? 'text-slate-600' : 'text-white',
                                 )}
                               >
@@ -235,69 +293,13 @@ const Navbar = ({ topbar, white }) => {
                               </a>
                             </Link>
                           </li>
-                          <MdKeyboardArrowDown color={white ? '#333' : '#fff'} />
                         </div>
-
-                        <div
-                          className={cn(
-                            'absolute w-56  ease-in duration-300',
-                            isSublinks ? ' opacity-100 pt-4' : 'opacity-0 pt-6',
-                          )}
-                        >
-                          <div
-                            className={cn(
-                              'bg-white pl-4 pt-2 rounded-b-md border-b border-l border-r delay-300',
-                              isSublinks ? ' block' : ' hidden',
-                            )}
-                          >
-                            {link.sublinks.map((sublink) => {
-                              return (
-                                <>
-                                  <div className="relative inline-block mb-2 ease-in duration-300">
-                                    <Link legacyBehavior key={sublink.id} href={sublink.path}>
-                                      <a
-                                        className={cn(
-                                          "no-underline  before:content-[''] before:absolute before:w-full before:h-[2px] before:bottom-0 before:top-6 before:rounded-md before:left-0 before:bg-orange-500 before:duration-300 before:ease-in-out",
-                                          pathname === sublink.path
-                                            ? 'before:scale-x-100'
-                                            : 'before:scale-x-0 before:hover:scale-x-100',
-                                          white ? 'text-slate-600' : 'text-slate-600',
-                                        )}
-                                      >
-                                        {sublink.name}
-                                      </a>
-                                    </Link>
-                                  </div>
-                                  <br />
-                                </>
-                              )
-                            })}
-                          </div>
-                        </div>
-                      </div>
-                    ) : (
-                      <div>
-                        <li className="flex items-center relative ml-5 cursor-pointer">
-                          <Link legacyBehavior key={link.id} href={link.path}>
-                            <a
-                              className={cn(
-                                "no-underline  before:content-[''] before:absolute before:w-full before:h-[2px] before:bottom-0 before:top-6 before:rounded-md before:left-0 before:bg-orange-500 before:duration-300 before:ease-in-out",
-                                pathname === link.path
-                                  ? 'before:scale-x-100'
-                                  : 'before:scale-x-0 before:hover:scale-x-100',
-                                white ? 'text-slate-600' : 'text-white',
-                              )}
-                            >
-                              {link.name}
-                            </a>
-                          </Link>
-                        </li>
-                      </div>
-                    )}
-                  </>
-                )
-              })}
-            </ul>
+                      )}
+                    </>
+                  )
+                })}
+              </ul>
+            </div>
             <div onClick={handleNav} className="block z-50 cursor-pointer md:hidden">
               {white ? <AiOutlineMenu size={35} /> : <AiOutlineMenu size={35} color="#fff" />}
             </div>

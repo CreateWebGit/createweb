@@ -82,18 +82,18 @@ const pageExpertis = () => {
       <main className="mt-[150px]">
         <div id="screen"></div>
         <section className="mb-12">
-          <div className=" bg-slate-100 py-8 md:hidden">
-            <div className="bg-white myShadowMobile my-4 mx-4 h-[90vh]">
-              <h2 className="text-center text-2xl"> Webbdesign </h2>
+          <div className=" overscroll-x-contain overflow-x-scroll overflow-y-hidden flex m-auto snap-mandatory snap-x bg-slate-100 py-8 md:hidden">
+            <div className="bg-white myShadowMobile my-4 mx-4 h-[70vh]  snap-center">
+              <h2 className="text-center w-[80vw] text-2xl"> Webbdesign </h2>
             </div>
-            <div className="bg-white myShadowMobile my-4 mx-4 h-[90vh]">
-              <h2 className="text-center text-2xl"> Webbutveckling </h2>
+            <div className="bg-white myShadowMobile my-4 mx-4 h-[70vh]  snap-center">
+              <h2 className="text-center w-[80vw] text-2xl"> Webbutveckling </h2>
             </div>
-            <div className="bg-white myShadowMobile my-4 mx-4 h-[90vh]">
-              <h2 className="text-center text-2xl"> Marknadsföring </h2>
+            <div className="bg-white myShadowMobile my-4 mx-4 h-[70vh]  snap-center">
+              <h2 className="text-center w-[80vw] text-2xl"> Marknadsföring </h2>
             </div>
-            <div className="bg-white myShadowMobile my-4 mx-4 h-[90vh]">
-              <h2 className="text-center text-2xl"> Support </h2>
+            <div className="bg-white myShadowMobile my-4 mx-4 h-[70vh]  snap-center">
+              <h2 className="text-center w-[80vw] text-2xl"> Support </h2>
             </div>
           </div>
           <div className="hidden md:block">
