@@ -82,6 +82,7 @@ const Navbar = ({ topbar, white }) => {
           <div className="hidden md:flex justify-between h-12 m-auto items-center xl:w-[1200px]">
             <Contact />
             <div className="flex justify-end">
+              {/*
               <div className="pr-5 cursor-pointer" onClick={handleLangSv}>
                 <ReactCountryFlag
                   className="emojiFlag"
@@ -104,6 +105,7 @@ const Navbar = ({ topbar, white }) => {
                   aria-label="United States"
                 />
               </div>
+              */}
             </div>
           </div>
         </div>
@@ -120,6 +122,7 @@ const Navbar = ({ topbar, white }) => {
           <div className="flex items-center">
             <div className="flex relative justify-between items-center z-50 mr-8 md:hidden">
               <>
+                {/*
                 <div
                   className="flex relative justify-between items-center"
                   onClick={() => setShowLanguage(!isShowLanguage)}
@@ -147,6 +150,7 @@ const Navbar = ({ topbar, white }) => {
                   )}
                   <MdKeyboardArrowDown size={25} color={white ? '#000' : '#fff'} />
                 </div>
+                */}
                 {isShowLanguage ? (
                   <>
                     <div className="absolute top-[75px] left-[-15px] text-white bg-[#897B8E] p-3 z-50">
@@ -186,6 +190,7 @@ const Navbar = ({ topbar, white }) => {
               </>
             </div>
             <div className="hidden md:flex flex-col">
+              {/*
               <div className="flex justify-end gap-2">
                 <div className="cursor-pointer" onClick={handleLangSv}>
                   <ReactCountryFlag
@@ -210,6 +215,7 @@ const Navbar = ({ topbar, white }) => {
                   />
                 </div>
               </div>
+              */}
               <ul className="flex list-none">
                 {navLinks.map((link) => {
                   return (
@@ -225,7 +231,7 @@ const Navbar = ({ topbar, white }) => {
                               <Link legacyBehavior key={link.id} href={link.path}>
                                 <a
                                   className={cn(
-                                    'no-underline text-white before:absolute before:w-full before:h-2 before:bottom-0 before:left-0 before:bg-orange-500 before:duration-300 before:ease-in-out',
+                                    'no-underline text-white text-xl before:absolute before:w-full before:h-2 before:bottom-0 before:left-0 before:bg-orange-500 before:duration-300 before:ease-in-out',
                                     router.pathname === link.path
                                       ? 'before:scale-x-100'
                                       : 'before:scale-x-0 hover:scale-x-100',
@@ -319,10 +325,19 @@ const Navbar = ({ topbar, white }) => {
         )}
       >
         <div className="flex items-center relative">
+          {/*
           <div className="m-auto mt-1 mb-4">
             <p className="text-center ">Låt oss konekta!</p>
           </div>
-          {/*<Image src={logo} width="80" height="80" alt="create web" />*/}
+          */}
+          <Link href={'/'} className="relative w-44 h-14 mt-4 ml-8">
+            <Image
+              className="logo"
+              src="/logo/LogoBlack.png"
+              alt="loggo för webbutvecklare"
+              layout="fill"
+            />
+          </Link>
           <div
             onClick={handleNav}
             className="rounded-full bg-white p-3 shadow-md absolute top-3 right-3"
@@ -341,7 +356,7 @@ const Navbar = ({ topbar, white }) => {
                       <>
                         <li
                           key={link.id}
-                          className="relative py-4 pl-4 text-left border-b border-solid border-black/10 "
+                          className="relative py-4 pl-4 text-left text-xl border-b border-solid border-black/10 "
                         >
                           <Link key={link.id} href={link.path}>
                             {link.name}

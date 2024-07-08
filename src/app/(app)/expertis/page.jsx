@@ -22,6 +22,7 @@ const pageExpertis = () => {
   const { inLanguage } = useContext(Message_data)
 
   useEffect(() => {
+    /*
     window.onresize = displayWindowSize
     window.onload = displayWindowSize
 
@@ -35,6 +36,7 @@ const pageExpertis = () => {
       document.getElementById('screen').innerHTML = myWidth + 'x' + myHeight
     }
     displayWindowSize()
+    */
   })
 
   let timer = setTimeout(() => {
@@ -79,21 +81,46 @@ const pageExpertis = () => {
         <meta name="description" content="some text" />
       </Head>
       <Navbar white={true} />
-      <main className="mt-[150px]">
-        <div id="screen"></div>
+      <main className="mt-[90px] md:mt-[110px]">
         <section className="mb-12">
           <div className=" overscroll-x-contain overflow-x-scroll overflow-y-hidden flex m-auto snap-mandatory snap-x bg-slate-100 py-8 md:hidden">
-            <div className="bg-white myShadowMobile my-4 mx-4 h-[70vh]  snap-center">
-              <h2 className="text-center w-[80vw] text-2xl"> Webbdesign </h2>
+            <div className="bg-white myShadowMobile my-4 mx-4 px-4 h-[70vh] snap-center">
+              <h2 className="text-center w-[80vw] text-2xl my-4"> Webbdesign </h2>
+              <p className="text-xl">
+                Vi förstår vikten utav och är bestämt dedikerade till att skräddarsy in i detalj
+                våra kunders webbdesign, så att de tydligt passar just deras verksamhet.och
+                kundkrets.
+              </p>
             </div>
-            <div className="bg-white myShadowMobile my-4 mx-4 h-[70vh]  snap-center">
-              <h2 className="text-center w-[80vw] text-2xl"> Webbutveckling </h2>
+            <div className="bg-white myShadowMobile my-4 mx-4 px-4 h-[70vh] snap-center">
+              <h2 className="text-center w-[80vw] text-2xl my-4"> Webbutveckling </h2>
+              <p className="text-xl">
+                Tekniskt sett är de viktigt för oss att kunna i första hand erbjuda webbapplikation,
+                bokningssystem, e - handel m.m som är byggd av oss från grunden. Vi lutar oss ogärna
+                mot tredje parts lösningar. Vi anser att det blir sällan kostnadseffektivt i
+                längden. Nästan samtliga av våra sajter är uppbyggda i React, vilket gör att dessa
+                webbsidor prestandamässigt och säkerhetsmässigt till toppklass sidor. Dessutom är de
+                bästa utgångsläget gällande sökordsoptimering.
+              </p>
             </div>
-            <div className="bg-white myShadowMobile my-4 mx-4 h-[70vh]  snap-center">
-              <h2 className="text-center w-[80vw] text-2xl"> Marknadsföring </h2>
+            <div className="bg-white myShadowMobile my-4 mx-4 px-4 h-[70vh] snap-center">
+              <h2 className="text-center w-[80vw] text-2xl my-4"> Marknadsföring </h2>
+              <p className="text-xl">
+                Att marknadsföra sig på webben är minst lika viktigt som att ha en professionell
+                webbapplikation! Vi har god erfarenhet och är professionella inom sökordsoptimering
+                och annonsering, samt bygga upp varumärke kring de olika kanaler inom sociala
+                medier.
+              </p>
             </div>
-            <div className="bg-white myShadowMobile my-4 mx-4 h-[70vh]  snap-center">
-              <h2 className="text-center w-[80vw] text-2xl"> Support </h2>
+            <div className="bg-white myShadowMobile my-4 mx-4 px-4 h-[70vh] snap-center">
+              <h2 className="text-center w-[80vw] text-2xl my-4"> Support </h2>
+              <p className="text-xl">
+                Ett av de främsta målen vi har är ett tryggt och långsiktigt samarbete med våra
+                kunder. Supportavtal brukar vara populärt där vi ser till att eran webbplats
+                fungerar optimalt över tid. Det kan också innefatta att vi är behjälpliga på eran
+                webbplats. Där vi hjälper till att hålla webbsidans innehåll i aktiv rörelse,
+                uppdaterar bilder och texter m.m efter överenskommelse.
+              </p>
             </div>
           </div>
           <div className="hidden md:block">
@@ -162,11 +189,34 @@ const pageExpertis = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex-grow-1 my-4 w-full border  bg-white/50">
-                {index === 0 ? 'Första' : ''}
-                {index === 1 ? 'Andra' : ''}
-                {index === 2 ? 'Tredje' : ''}
-                {index === 3 ? 'Fjärde' : ''}
+              <div className="flex-grow-1 flex flex-col  my-4 px-4 w-full border bg-white/50">
+                {index === 0 ? <h2 className="text-2xl text-center py-8">Webbdesign</h2> : ''}
+                <p className="text-xl">
+                  {index === 0
+                    ? 'Vi förstår vikten utav och är bestämt dedikerade till att skräddarsy in i detalj våra kunders webbdesign, så att de tydligt passar just deras verksamhet.och kundkrets.'
+                    : ''}
+                </p>
+
+                {index === 1 ? <h2 className="text-2xl text-center py-8">Webbutveckling</h2> : ''}
+                <p className="text-xl">
+                  {index === 1
+                    ? 'Tekniskt sett är de viktigt för oss att kunna i första hand erbjuda webbapplikation, bokningssystem, e - handel m.m som är byggd av oss från grunden. Vi lutar oss ogärna mot tredje parts lösningar. Vi anser att det blir sällan kostnadseffektivt i längden. Nästan samtliga av våra sajter är uppbyggda i React, vilket gör att dessa webbsidor prestandamässigt och säkerhetsmässigt till toppklass sidor. Dessutom är de bästa utgångsläget gällande sökordsoptimering.'
+                    : ''}
+                </p>
+
+                {index === 2 ? <h2 className="text-2xl text-center py-8">Marknadsföring</h2> : ''}
+                <p className="text-xl">
+                  {index === 2
+                    ? 'Att marknadsföra sig på webben är minst lika viktigt som att ha en professionell webbapplikation! Vi har god erfarenhet och är professionella inom sökordsoptimering och annonsering, samt bygga upp varumärke kring de olika kanaler inom sociala medier. '
+                    : ''}
+                </p>
+
+                {index === 3 ? <h2 className="text-2xl text-center py-8">Support</h2> : ''}
+                <p className="text-xl">
+                  {index === 3
+                    ? 'Ett av de främsta målen vi har är ett tryggt och långsiktigt samarbete med våra kunder. Supportavtal brukar vara populärt där vi ser till att eran webbplats fungerar optimalt över tid. Det kan också innefatta att vi är behjälpliga på eran webbplats. Där vi hjälper till att hålla webbsidans innehåll i aktiv rörelse, uppdaterar bilder och texter m.m efter överenskommelse.'
+                    : ''}
+                </p>
               </div>
             </div>
           </div>

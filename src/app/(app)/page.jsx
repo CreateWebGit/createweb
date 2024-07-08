@@ -263,8 +263,9 @@ export default function Home() {
                   {inLanguage === 'sv' ? 'Sökordsoptimering' : 'Search Engine Optimization'}
                 </h3>
                 <p>
-                  Engage and captivate your visitors with our exceptional landing page development
-                  services, designed to convert clicks into customers.
+                  {inLanguage == 'sv'
+                    ? 'Se till att komma toprankad bland sökord som gynnar just din veksamhet på Google med hjälp av sökordsoptimering'
+                    : 'Make sure to get top ranking among keywords that benefit your activity on Google with search engine optimisation'}
                 </p>
               </div>
             </div>

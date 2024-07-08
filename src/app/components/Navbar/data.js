@@ -8,6 +8,7 @@ export const navLinks = [
     id: 1,
     name: 'Expertis',
     path: '/expertis',
+    /*
     sublinks: [
       {
         id: 1,
@@ -25,6 +26,7 @@ export const navLinks = [
         path: '/expertis/seo',
       },
     ],
+    */
   },
   {
     id: 2,

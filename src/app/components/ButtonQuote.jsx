@@ -1,19 +1,16 @@
-import React from 'react';
-import { IoIosArrowDroprightCircle } from 'react-icons/io';
+import Link from 'next/link'
+import React from 'react'
+import { IoIosArrowDroprightCircle } from 'react-icons/io'
 
 const ButtonQuote = ({ children, onClick, background }) => {
   return (
     <div>
-      <div
-        className={'button'}
-        onClick={onClick}
-      >
-        {children}
-        <IoIosArrowDroprightCircle
-          className={'icon'}
-          size={22}
-        />
-      </div>
+      <Link href={'/kontakta'}>
+        <div className={'button'} onClick={onClick}>
+          {children}
+          <IoIosArrowDroprightCircle className={'icon'} size={22} />
+        </div>
+      </Link>
       <style jsx>{`
         .button {
           display: inline-flex;
@@ -32,7 +29,7 @@ const ButtonQuote = ({ children, onClick, background }) => {
         }
       `}</style>
     </div>
-  );
-};
+  )
+}
 
-export default ButtonQuote;
+export default ButtonQuote
