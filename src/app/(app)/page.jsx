@@ -41,7 +41,7 @@ export default function Home() {
 
       <Navbar white={false} />
 
-      <div className="heroContainer pt-[100px] px-4 md:pt-[200px] h-[130vh] md:h-[90vh] z-50">
+      <div className="heroContainer pt-[100px] px-4 md:pt-[200px] h-[110vh] md:h-[90vh] z-50">
         <div className="block flex-row-reverse md:flex">
           <div className="w-full md:w-1/2">
             <h1 className="text-2xl text-center md:text-6xl md:text-left font-bold text-white">
@@ -204,7 +204,7 @@ export default function Home() {
                   Vi stödjer nystartade samt etablarade företag att få växa i sin verksamhet
                 </h2>
                 <div className="flex relative pt-4 h-[40vh] w-full z-50 items-end justify-end md:w-1/2 md:hidden">
-                  <div className="absolute top-0 left-0 border-l-8 border-double border-t-8 border-l-orange-600 border-t-orange-600 rounded-tl-lg h-[200px] w-[200px]" />
+                  <div className="absolute top-0 left-0 border-l-8 border-double border-t-8 border-l-[#f49a11] border-t-[#f49a11] rounded-tl-lg h-[200px] w-[200px]" />
                   <div className="relative w-full h-full mx-4 md:h-[96%] md:w-[96%] md:mx-0">
                     <Image
                       src={aboutImage}
@@ -330,7 +330,7 @@ export default function Home() {
                       : 'What make us distinguished from others!'}
                   </p>
                 </div>
-                <div className="relative h-[80vh] z-50 flex flex-row md:flex md:flex-row items-end justify-start ">
+                <div className="relative h-[40vh] z-50 flex flex-row pt-4 items-end justify-start md:flex md:flex-row md:pt-0 md:h-[80vh]">
                   <div className="absolute top-0 right-0 border-r-8 border-double border-t-8 border-r-[#F49B11] border-t-[#F49B11] rounded-tr-lg h-[300px] w-[300px]" />
                   <div className="relative h-full mx-4 w-full md:h-[96%] md:w-[96%] md:mx-0">
                     <Image
