@@ -14,7 +14,7 @@ const Footer = ({ inLanguage }) => {
   return (
     <div className="-mt-2  bg-[#1B36A3] text-white relative overflow-hidden">
       <div className="footerContainer flex justify-center items-start bg-[#EBF7FE] relative">
-        <div className="h-[50px] w-[120px] absolute left-0 bottom-[5px] rotate-[-18deg] md:rotate-[-4deg] bg-[#DFF1FF]"></div>
+        <div className="h-[50px] w-[120px] absolute left-[-5px] bottom-[2px] rotate-[-18deg] md:rotate-[-4deg] bg-[#DFF1FF]"></div>
         <div className="h-[50px] w-[180px] absolute left-[20px] bottom-[4px] md:bottom-[-15px] border border-[#BCE4FF] rotate-[-18deg] md:rotate-[-4deg] "></div>
         <div className=" text-black text-center pt-32 pb-64 md:py-32 z-50">
           <h2 style={{ whiteSpace: 'pre-line' }} className="text-4xl font-bold">
@@ -27,11 +27,13 @@ const Footer = ({ inLanguage }) => {
               ? 'Gå från professionell verksamhet till ett bolag. \n Vi täcker upp dig!'
               : 'From professional business to enterprise, we got you covered!'}
           </p>
-          <ButtonQuote background="#f49a11">Begär Offert</ButtonQuote>
+          <ButtonQuote href="/kontakta" background="#f49a11">
+            Begär Offert
+          </ButtonQuote>
         </div>
       </div>
       <div className="w-full md:w-[1200px] m-auto px-4">
-        <div className="h-[50px] w-[180px] absolute -right-4 mt-[-175px] md:mt-[-140px] rotate-[-18deg] sm:rotate-[-8deg] md:rotate-[-4deg] bg-[#00E1FF] z-50"></div>
+        <div className="h-[50px] w-[180px] absolute -right-4 mt-[-175px] md:mt-[-150px] rotate-[-18deg] sm:rotate-[-8deg] md:rotate-[-4deg] bg-[#00E1FF] z-50"></div>
         <div className="mb-8 mt-8">
           <Image className="m-auto md:m-0" src={logo} width={300} height={80} />
         </div>

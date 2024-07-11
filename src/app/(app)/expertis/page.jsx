@@ -54,7 +54,7 @@ const pageExpertis = () => {
       }
     }
     // })
-  }, 1000)
+  }, 2000)
 
   const functionOne = () => {
     setTest(false)
@@ -83,48 +83,50 @@ const pageExpertis = () => {
       <Navbar white={true} />
       <main className="mt-[90px] md:mt-[110px]">
         <section className="mb-12">
-          <div className=" overscroll-x-contain overflow-x-scroll overflow-y-hidden flex m-auto snap-mandatory snap-x bg-slate-100 py-8 md:hidden">
-            <div className="bg-white myShadowMobile my-4 mx-4 px-4 h-[70vh] snap-center">
-              <h2 className="text-center w-[80vw] text-2xl my-4"> Webbdesign </h2>
-              <p className="text-xl">
-                Vi förstår vikten utav och är bestämt dedikerade till att skräddarsy in i detalj
-                våra kunders webbdesign, så att de tydligt passar just deras verksamhet.och
-                kundkrets.
-              </p>
-            </div>
-            <div className="bg-white myShadowMobile my-4 mx-4 px-4 h-[70vh] snap-center">
-              <h2 className="text-center w-[80vw] text-2xl my-4"> Webbutveckling </h2>
-              <p className="text-xl">
-                Tekniskt sett är de viktigt för oss att kunna i första hand erbjuda webbapplikation,
-                bokningssystem, e - handel m.m som är byggd av oss från grunden. Vi lutar oss ogärna
-                mot tredje parts lösningar. Vi anser att det blir sällan kostnadseffektivt i
-                längden. Nästan samtliga av våra sajter är uppbyggda i React, vilket gör att dessa
-                webbsidor prestandamässigt och säkerhetsmässigt till toppklass sidor. Dessutom är de
-                bästa utgångsläget gällande sökordsoptimering.
-              </p>
-            </div>
-            <div className="bg-white myShadowMobile my-4 mx-4 px-4 h-[70vh] snap-center">
-              <h2 className="text-center w-[80vw] text-2xl my-4"> Marknadsföring </h2>
-              <p className="text-xl">
-                Att marknadsföra sig på webben är minst lika viktigt som att ha en professionell
-                webbapplikation! Vi har god erfarenhet och är professionella inom sökordsoptimering
-                och annonsering, samt bygga upp varumärke kring de olika kanaler inom sociala
-                medier.
-              </p>
-            </div>
-            <div className="bg-white myShadowMobile my-4 mx-4 px-4 h-[70vh] snap-center">
-              <h2 className="text-center w-[80vw] text-2xl my-4"> Support </h2>
-              <p className="text-xl">
-                Ett av de främsta målen vi har är ett tryggt och långsiktigt samarbete med våra
-                kunder. Supportavtal brukar vara populärt där vi ser till att eran webbplats
-                fungerar optimalt över tid. Det kan också innefatta att vi är behjälpliga på eran
-                webbplats. Där vi hjälper till att hålla webbsidans innehåll i aktiv rörelse,
-                uppdaterar bilder och texter m.m efter överenskommelse.
-              </p>
+          <div className="bg-slate-100 md:hidden">
+            <div className=" overscroll-x-contain overflow-x-scroll overflow-y-hidden flex m-auto snap-mandatory snap-x  py-8">
+              <div className="bg-white myShadowMobile my-4 mx-4 px-4 h-[70vh] snap-center">
+                <h2 className="text-center w-[80vw] text-2xl my-4"> Webbdesign </h2>
+                <p className="text-xl">
+                  Vi förstår vikten utav och är bestämt dedikerade till att skräddarsy in i detalj
+                  våra kunders webbdesign, så att de tydligt passar just deras verksamhet.och
+                  kundkrets.
+                </p>
+              </div>
+              <div className="bg-white myShadowMobile my-4 mx-4 px-4 h-[70vh] snap-center">
+                <h2 className="text-center w-[80vw] text-2xl my-4"> Webbutveckling </h2>
+                <p className="text-xl">
+                  Tekniskt sett är de viktigt för oss att kunna i första hand erbjuda
+                  webbapplikation, bokningssystem, e - handel m.m som är byggd av oss från grunden.
+                  Vi lutar oss ogärna mot tredje parts lösningar. Vi anser att det blir sällan
+                  kostnadseffektivt i längden. Nästan samtliga av våra sajter är uppbyggda i React,
+                  vilket gör att dessa webbsidor prestandamässigt och säkerhetsmässigt till
+                  toppklass sidor. Dessutom är de bästa utgångsläget gällande sökordsoptimering.
+                </p>
+              </div>
+              <div className="bg-white myShadowMobile my-4 mx-4 px-4 h-[70vh] snap-center">
+                <h2 className="text-center w-[80vw] text-2xl my-4"> Marknadsföring </h2>
+                <p className="text-xl">
+                  Att marknadsföra sig på webben är minst lika viktigt som att ha en professionell
+                  webbapplikation! Vi har god erfarenhet och är professionella inom
+                  sökordsoptimering och annonsering, samt bygga upp varumärke kring de olika kanaler
+                  inom sociala medier.
+                </p>
+              </div>
+              <div className="bg-white myShadowMobile my-4 mx-4 px-4 h-[70vh] snap-center">
+                <h2 className="text-center w-[80vw] text-2xl my-4"> Support </h2>
+                <p className="text-xl">
+                  Ett av de främsta målen vi har är ett tryggt och långsiktigt samarbete med våra
+                  kunder. Supportavtal brukar vara populärt där vi ser till att eran webbplats
+                  fungerar optimalt över tid. Det kan också innefatta att vi är behjälpliga på eran
+                  webbplats. Där vi hjälper till att hålla webbsidans innehåll i aktiv rörelse,
+                  uppdaterar bilder och texter m.m efter överenskommelse.
+                </p>
+              </div>
             </div>
           </div>
           <div className="hidden md:block">
-            <div className="absolute h-[600px] w-full -z-20 bg-white">
+            <div className="absolute h-[600px] py-32 w-full -z-20 bg-white">
               <Image
                 src={bg}
                 alt="webbutveckling bakgrund"
@@ -132,14 +134,13 @@ const pageExpertis = () => {
                 style={{ objectFit: 'cover' }}
               />
             </div>
-
             <div className="bg-white h-[600px] w-full absolute -z-10 opacity-90" />
             <div className="flex h-[600px] w-[1200px] m-auto ">
               <div className="flex flex-col justify-center  flex-grow-0">
                 <div className="flex h-1/2">
                   <div
                     onClick={() => handleClick(0)}
-                    className="flex flex-col justify-between flex-grow bg-white rounded-md w-[220px] py-4 my-4 mr-8 shadow-md z-[999]"
+                    className="flex flex-col justify-between flex-grow bg-white cursor-pointer rounded-md w-[220px] py-4 my-4 mr-8 shadow-md z-[999]"
                   >
                     <h2 className="text-center text-2xl"> Webbdesign </h2>
                     <GiPencilRuler
@@ -151,7 +152,7 @@ const pageExpertis = () => {
                   </div>
                   <div
                     onClick={() => handleClick(1)}
-                    className="flex flex-col justify-between flex-grow bg-white rounded-md w-[220px] py-4 my-4 mr-8 shadow-md"
+                    className="flex flex-col justify-between flex-grow bg-white cursor-pointer rounded-md w-[220px] py-4 my-4 mr-8 shadow-md"
                   >
                     <h2 className="text-center text-2xl"> Webbutveckling </h2>
                     <PiCodeDuotone
@@ -165,7 +166,7 @@ const pageExpertis = () => {
                 <div className="flex h-1/2">
                   <div
                     onClick={() => handleClick(2)}
-                    className="flex flex-col justify-between flex-grow bg-white rounded-md w-[220px] py-4 my-4 mr-8 shadow-md"
+                    className="flex flex-col justify-between flex-grow bg-white cursor-pointer rounded-md w-[220px] py-4 my-4 mr-8 shadow-md"
                   >
                     <h2 className="text-center text-2xl"> Marknadsföring </h2>
                     <IoPulseOutline
@@ -177,7 +178,7 @@ const pageExpertis = () => {
                   </div>
                   <div
                     onClick={() => handleClick(3)}
-                    className="flex flex-col justify-between flex-grow bg-white rounded-md w-[220px] py-4 my-4 mr-8 shadow-md"
+                    className="flex flex-col justify-between flex-grow bg-white cursor-pointer rounded-md w-[220px] py-4 my-4 mr-8 shadow-md"
                   >
                     <h2 className="text-center text-2xl"> Support </h2>
                     <MdSupportAgent

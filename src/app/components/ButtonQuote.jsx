@@ -2,17 +2,18 @@ import Link from 'next/link'
 import React from 'react'
 import { IoIosArrowDroprightCircle } from 'react-icons/io'
 
-const ButtonQuote = ({ children, onClick, background }) => {
+const ButtonQuote = ({ children, href, onClick, background, icon = true }) => {
   return (
     <div>
-      <Link href={'/kontakta'}>
+      <Link href={href}>
         <div className={'button'} onClick={onClick}>
           {children}
-          <IoIosArrowDroprightCircle className={'icon'} size={22} />
+          {icon ? <IoIosArrowDroprightCircle className={'icon'} size={22} /> : ''}
         </div>
       </Link>
       <style jsx>{`
         .button {
+          border: solid 1px black;
           display: inline-flex;
           align-items: center;
           padding: 12px 18px;

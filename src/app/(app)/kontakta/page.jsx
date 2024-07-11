@@ -20,9 +20,15 @@ const pageContact = () => {
       </Head>
       <Navbar white={true} />
 
-      <div className="mt-[200px] px-8 w-full md:w-[1200px] m-auto flex relative">
+      <div className="mt-[220px] px-8 w-full md:w-[1200px] m-auto flex relative">
         <div className=" w-full md:w-1/2 bg-white">
-          <Contact inLanguage={inLanguage} />
+          <div>
+            <div className="w-full pt-8 md:w-[1200px] m-auto">
+              <h2 className="text-2xl mr-32">Har du en spännade idé? Eller andra frågor?</h2>
+              <p text-xl>Vi hör alltid av oss innom 48 timmar </p>
+            </div>
+            <Contact inLanguage={inLanguage} />
+          </div>
         </div>
         <div className="w-0 md:w-1/2">
           <Image

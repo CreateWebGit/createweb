@@ -24,6 +24,7 @@ import heroComputor from '../../../public/assets/HeroComputor.webp'
 import aboutImage from '../../../public/assets/aboutPic.jpg'
 import timelinePic from '../../../public/assets/timeline.png'
 import timelinePicMobile from '../../../public/assets/timelineMobile.png'
+import ButtonQuote from '../components/ButtonQuote'
 
 //import Timeline from '../components/Timeline'
 //import { useScrollInfo } from '@faceless-ui/scroll-info'
@@ -43,22 +44,22 @@ export default function Home() {
       <div className="heroContainer pt-[100px] px-4 md:pt-[200px] h-[130vh] md:h-[90vh] z-50">
         <div className="block flex-row-reverse md:flex">
           <div className="w-full md:w-1/2">
-            <h1 className="text-2xl text-center md:text-6xl font-bold text-white">
+            <h1 className="text-2xl text-center md:text-6xl md:text-left font-bold text-white">
               {inLanguage === 'sv' ? (
                 <>
                   Lås upp kraften av <br />
-                  <span className="text-[#00E1FF]">Webbutveckling</span>
+                  <span className="text-[#F49B11]">Webbutveckling</span>
                 </>
               ) : (
                 <>
                   Unlock the Power of <br />
-                  <span className="text-[#00E1FF]">Web Development</span>
+                  <span className="text-[#F49B11]">Web Development</span>
                 </>
               )}
             </h1>
 
-            <div className="hidden md:block w-[450px] m-auto">
-              <h2 className="text-xl my-4 text-center md:text-2xl text-white">
+            <div className="hidden md:block w-[450px]">
+              <h2 className="text-xl my-4 text-left md:text-2xl text-white">
                 {inLanguage === 'sv'
                   ? 'Skapa banbrytande digitala upplevelser'
                   : 'Crafting Cutting-Edge Digital Experiences'}
@@ -68,10 +69,18 @@ export default function Home() {
                   ? 'Createweb erbjuder professionell webbutveckling för företag i Stockholm och i hela Sverige. Vår erfarna webbutvecklare har kompetens att skapa skräddarsydda lösningar som uppfyller dina specifika behov.'
                   : 'Createweb offers professional web development for companies in Stockholm and throughout Sweden. Our experienced web developers have the skills to create customized solutions that meet your specific needs.'}
               </p>
-              <div className="flex mt-4">
+              <div className="flex justify-end w-full gap-4 mt-4">
+                <ButtonQuote href="/kontakta" background="#f49a11">
+                  Kontakta
+                </ButtonQuote>
+                <ButtonQuote href="/om-oss" background="transparent">
+                  Om Oss
+                </ButtonQuote>
+
+                {/*
                 <Link
                   href={'/kontakta'}
-                  className="block bg-gradient-to-r from-[#9F3CD7] to-[#BC47DD] rounded-md shadow-xl text-white cursor-pointer text-sm m-1 py-2 px-3 text-center"
+                  className="block bg-orange-600 rounded-md shadow-xl text-white cursor-pointer text-sm m-1 py-2 px-3 text-center"
                 >
                   Kontakta
                 </Link>
@@ -82,6 +91,7 @@ export default function Home() {
                 >
                   Om oss
                 </Link>
+                */}
               </div>
             </div>
           </div>
@@ -102,24 +112,24 @@ export default function Home() {
                 : 'Crafting Cutting-Edge Digital Experiences'}
             </h2>
             <p className="text-white pt-4 pb-6">
-              Createweb offers professional web development for companies in Stockholm and
-              throughout Sweden. Our experienced web developers have the skills to create customized
-              solutions that meet your specific needs.
+              {inLanguage === 'sv'
+                ? 'Createweb erbjuder professionell webbutveckling för företag i Stockholm och i hela Sverige. Vår erfarna webbutvecklare har kompetens att skapa skräddarsydda lösningar som uppfyller dina specifika behov.'
+                : 'Createweb offers professional web development for companies in Stockholm and throughout Sweden. Our experienced web developers have the skills to create customized solutions that meet your specific needs.'}
             </p>
             <div className="block">
-              <div
+              <Link
                 href={'/kontakta'}
                 className="bg-gradient-to-r from-[#9F3CD7] to-[#BC47DD] rounded-md shadow-xl text-white cursor-pointer text-sm m-1 py-2 px-3 text-center"
               >
                 Kontakta
-              </div>
+              </Link>
 
-              <div
+              <Link
                 href={'/om-oss'}
                 className=" bg-transparent border rounded-md shadow-xl text-white cursor-pointer text-sm m-1 py-2 px-3 text-center"
               >
                 Om oss
-              </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -175,8 +185,8 @@ export default function Home() {
         <section className="bg-white">
           <div className=" w-full md:w-[1200px] m-auto px-4">
             <div className="relative flex flex-col-reverse mx-0 pb-8 md:flex-row gap-4 md:mx-3 md:pb-0">
-              <div className="hidden relative pt-4 h-[80vh] w-full z-50 items-end justify-end md:w-1/2 md:flex">
-                <div className="absolute top-0 left-0 border-l-8 border-double border-t-8 border-l-orange-600 border-t-orange-600 rounded-tl-lg h-[300px] w-[300px]" />
+              <div className="hidden relative h-[80vh] w-full z-50 items-end justify-end md:w-1/2 md:flex">
+                <div className="absolute top-0 left-0 border-l-8 border-double border-t-8 border-l-[#F49B11] border-t-[#F49B11] rounded-tl-lg h-[300px] w-[300px]" />
                 <div className="relative w-full h-full mx-4 md:h-[96%] md:w-[96%] md:mx-0">
                   <Image
                     src={aboutImage}
@@ -211,18 +221,23 @@ export default function Home() {
                   vad vi hävdar. Vårt huvudfokus är att skapa bästa webbuplevelsen, med högt
                   kompetenta utvecklare och designer, för individer och företag.
                 </p>
-                <div className="flex flex-col justify-end items-end my-4">
+                <div className="flex flex-col justify-end items-end my-4 w-full">
+                  <ButtonQuote href="/om-oss" background="#f49a11">
+                    Läs mer
+                  </ButtonQuote>
+                  {/*
                   <Link
                     href={'/om-oss'}
-                    className=" inline-block bg-gradient-to-r from-[#9F3CD7] to-[#BC47DD] rounded-md shadow-xl text-white cursor-pointer text-sm m-1 py-2 px-3 text-center"
+                    className=" inline-block bg-orange-600 rounded-md shadow-xl text-white cursor-pointer text-sm m-1 py-2 px-3 text-center"
                   >
                     Läs mer
                   </Link>
+                  */}
                 </div>
               </div>
             </div>
 
-            <div className="hidden relative justify-center items-center bg-[#BC47DD] w-[88%] top-[-95px] left-[50%] ml-[-44%] md:ml-[-44%] py-5 px-4 rounded-md text-2xl text-white text-center z-50 md:flex">
+            <div className="hidden relative justify-center items-center bg-[#F49B11] w-[88%] top-[-55px] left-[50%] ml-[-44%] md:ml-[-44%] py-5 px-4 rounded-md text-2xl text-white text-center z-50 md:flex">
               {inLanguage === 'sv'
                 ? '“Vi har en passion i att få leverera högkvalitativt och användarvänligt teknik för att hjälpa våra kunder att nå sina mål”'
                 : '“We have a passion for delivering high-quality and user-friendly technology to help our customers achieve their goals”'}
@@ -315,8 +330,8 @@ export default function Home() {
                       : 'What make us distinguished from others!'}
                   </p>
                 </div>
-                <div className="relative h-[80vh] pt-4 z-50 flex flex-row md:flex md:flex-row items-end justify-start ">
-                  <div className="absolute top-0 right-0 border-r-8 border-double border-t-8 border-r-orange-600 border-t-orange-600 rounded-tr-lg h-[300px] w-[300px]" />
+                <div className="relative h-[80vh] z-50 flex flex-row md:flex md:flex-row items-end justify-start ">
+                  <div className="absolute top-0 right-0 border-r-8 border-double border-t-8 border-r-[#F49B11] border-t-[#F49B11] rounded-tr-lg h-[300px] w-[300px]" />
                   <div className="relative h-full mx-4 w-full md:h-[96%] md:w-[96%] md:mx-0">
                     <Image
                       src="/assets/whyuspic1.png"

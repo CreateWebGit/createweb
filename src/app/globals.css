@@ -47,13 +47,6 @@
   align-items: center;
 }
 
-.sloganContainerFilter h2 {
-  margin: 100px 0px;
-  color: #fff;
-  font-size: 64px;
-  font-weight: bold;
-}
-
 .animatePic {
   animation: ease-out 1s slideIn;
 }
@@ -112,11 +105,15 @@ textarea {
 }
 
 input[type='submit'] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 2rem;
+  padding: 12px 16px;
+  border-radius: 20px;
   cursor: pointer;
-  background: rgb(249, 105, 14);
+  background: #f49a11;
   color: white;
-  border: none;
 }
 
 input[type='text'],
@@ -193,9 +190,17 @@ textarea:focus {
   }
 }
 
+.myShadow {
+  box-shadow: 0px 20px 21px -13px #b25d43;
+}
+
 @media screen and (max-width: 768px) {
-  .myShadowMobile {
+  .myShadow {
     box-shadow: #b25d43 0px 4px 12px;
+  }
+
+  .test {
+    white-space: 'pre-line';
   }
 
   .backgroundFixed {

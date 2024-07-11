@@ -1,6 +1,7 @@
 'use client'
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import ButtonQuote from '../ButtonQuote'
 
 //import useStyles from './css';
 
@@ -30,7 +31,7 @@ const Contact = ({ inLanguage }) => {
   return (
     <>
       {emailSent === false ? (
-        <form ref={form} className="" onSubmit={sendEmail}>
+        <form ref={form} className="">
           <div className="styledInput">
             <input className="" type="text" name="user_name" placeholder=" " required />
             <label className="">{inLanguage === 'sv' ? 'Namn:' : 'Name:'}</label>
@@ -51,9 +52,16 @@ const Contact = ({ inLanguage }) => {
             <label className="">{inLanguage === 'sv' ? 'Meddelande:' : 'Message:'}</label>
             <div className=""></div>
           </div>
+          <div className="mt-8 flex items-end justify-end w-full">
+            <ButtonQuote href="/kontakta" background="#f49a11" icon={false} onClick={sendEmail}>
+              Skicka
+            </ButtonQuote>
+          </div>
+          {/*
           <div className="">
             <input type="submit" value={inLanguage === 'sv' ? 'Skicka' : 'Send'} />
-          </div>
+				  </div>
+				  */}
         </form>
       ) : (
         <div className="">Tack</div>
