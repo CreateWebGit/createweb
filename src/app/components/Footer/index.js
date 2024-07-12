@@ -19,16 +19,16 @@ const Footer = ({ inLanguage }) => {
         <div className=" text-black text-center pt-32 pb-64 md:py-32 z-50">
           <h2 style={{ whiteSpace: 'pre-line' }} className="text-4xl font-bold">
             {inLanguage === 'sv'
-              ? `Har du projekt\n eller en affärsidé?`
-              : 'Have a project or business idea? <br /> Push the button to get started!'}
+              ? `Har du projekt \n eller en affärsidé?`
+              : 'Have a project \n or business idea? '}
           </h2>
           <p style={{ whiteSpace: 'pre-line' }} className="mt-4 mb-8">
             {inLanguage === 'sv'
               ? 'Gå från professionell verksamhet till ett bolag. \n Vi täcker upp dig!'
-              : 'From professional business to enterprise, we got you covered!'}
+              : 'From professional business to enterprise. \n We got you covered!'}
           </p>
           <ButtonQuote href="/kontakta" background="#f49a11">
-            Begär Offert
+            {inLanguage === 'sv' ? 'Begär Offert' : 'Request quotation'}
           </ButtonQuote>
         </div>
       </div>

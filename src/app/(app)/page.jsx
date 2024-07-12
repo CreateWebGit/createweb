@@ -175,7 +175,9 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col gap-2 justify-center items-start w-full md:w-1/2">
-                <h3 className="text-2xl text-[#1B45B4]">OM OSS </h3>
+                <h3 className="text-2xl text-[#1B45B4]">
+                  {inLanguage === 'sv' ? 'OM OSS' : 'ABOUT US'}{' '}
+                </h3>
                 <h2 className="text-3xl">
                   {inLanguage === 'sv'
                     ? 'Vi stödjer nystartade samt etablarade företag att få växa i sin verksamhet'
@@ -336,17 +338,16 @@ export default function Home() {
               {inLanguage === 'sv' ? 'Här är vår arbetsprocess' : 'Here is our work process'}
             </h2>
             <div className="absolute flex top-[200px] left-[20px] md:top-[250px] md:left-[30px] md:block">
-              <h3 className="hidden relative mt-8 mb-1 text-2xl z-50 md:block">Steg 1</h3>
+              <h3 className="hidden relative mt-8 mb-1 text-2xl z-50 md:block">
+                {inLanguage === 'sv' ? 'Steg 1' : 'Step 1'}
+              </h3>
               <div className="w-[65px] h-[65px] border border-[#FFCF85] rounded-full bg-white flex justify-center items-center">
                 <div className="w-[21px] h-[21px] bg-[#F5A42A] rounded-full"></div>
               </div>
               <div className="w-56 -top-6 relative z-50 ml-4 md:ml-0">
-                <h2 className="absolute inline-block mt-[-30px] top-0 right-0 text-[182px] font-bold text-[#FAE3C3] z-40 md:mt-[-60px]">
-                  1
-                </h2>
                 <h3
                   style={{ whiteSpace: 'pre-line' }}
-                  className="relative mt-7 mb-1 text-2xl font-bold"
+                  className="relative mt-7 mb-1 text-2xl font-bold z-50"
                 >
                   {inLanguage === 'sv'
                     ? 'Planera och \n Möta kund'
@@ -357,10 +358,15 @@ export default function Home() {
                     ? 'Definiera projektets mål och målsättningar. Sammanställa Kravspecifikation från intressenter och kunder.'
                     : 'Define the projects goals and objectives. Compile requirements specification from stakeholders and customers.'}
                 </p>
+                <h2 className="absolute inline-block mt-[-30px] top-0 right-0 text-[182px] font-bold text-[#FAE3C3] z-40 md:mt-[-60px]">
+                  1
+                </h2>
               </div>
             </div>
             <div className="absolute flex top-[500px] left-[20px] md:top-[90px] md:left-[250px] md:block">
-              <h3 className="hidden relative mt-8 mb-1 text-2xl z-50 md:block">Steg 2</h3>
+              <h3 className="hidden relative mt-8 mb-1 text-2xl z-50 md:block">
+                {inLanguage === 'sv' ? 'Steg 2' : 'Step 2'}
+              </h3>
               <div className="w-[65px] h-[65px] border border-[#FFCF85] rounded-full bg-white flex justify-center items-center">
                 <div className="w-[21px] h-[21px] bg-[#F5A42A] rounded-full"></div>
               </div>
@@ -382,7 +388,9 @@ export default function Home() {
               </div>
             </div>
             <div className="absolute flex top-[800px] left-[20px] md:top-[90px] md:left-[600px] md:block">
-              <h3 className="hidden relative mt-8 mb-1 text-2xl z-50 md:block">Steg 3</h3>
+              <h3 className="hidden relative mt-8 mb-1 text-2xl z-50 md:block">
+                {inLanguage === 'sv' ? 'Steg 3' : 'Step 3'}
+              </h3>
               <div className="w-[65px] h-[65px] border border-[#FFCF85] rounded-full bg-white flex justify-center items-center">
                 <div className="w-[21px] h-[21px] bg-[#F5A42A] rounded-full"></div>
               </div>
@@ -406,7 +414,9 @@ export default function Home() {
               </div>
             </div>
             <div className="absolute flex top-[1100px] left-[20px] md:top-[20px] md:left-[900px] mt-[-20px] md:block">
-              <h3 className="hidden relative mt-8 mb-1 text-2xl z-50 md:block">Steg 4</h3>
+              <h3 className="hidden relative mt-8 mb-1 text-2xl z-50 md:block">
+                {inLanguage === 'sv' ? 'Steg 4' : 'Step 4'}
+              </h3>
               <div className="w-[65px] h-[65px] border border-[#FFCF85] rounded-full bg-white flex justify-center items-center">
                 <div className="w-[21px] h-[21px] bg-[#F5A42A] rounded-full"></div>
               </div>
