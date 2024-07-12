@@ -377,7 +377,7 @@ const Navbar = ({ topbar, white }) => {
                           key={link.id}
                           className="relative py-4 pl-4 text-left border-b border-solid border-black/10 "
                         >
-                          {link.name}
+                          {inLanguage === 'sv' ? link.name : link.nameEng}
                         </li>
                       </Link>
                     )}
@@ -387,7 +387,7 @@ const Navbar = ({ topbar, white }) => {
             </ul>
           </div>
           <div className={styles.navMobileSlogan}>
-            <p>Låt oss konekta</p>
+            <p>{inLanguage === 'sv' ? 'Låt oss konekta' : "Let's connect"}</p>
           </div>
 
           {/*

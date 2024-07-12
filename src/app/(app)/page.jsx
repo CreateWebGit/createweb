@@ -176,7 +176,7 @@ export default function Home() {
 
               <div className="flex flex-col gap-2 justify-center items-start w-full md:w-1/2">
                 <h3 className="text-2xl text-[#1B45B4]">
-                  {inLanguage === 'sv' ? 'OM OSS' : 'ABOUT US'}{' '}
+                  {inLanguage === 'sv' ? 'OM OSS' : 'ABOUT US'}
                 </h3>
                 <h2 className="text-3xl">
                   {inLanguage === 'sv'

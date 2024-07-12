@@ -24,8 +24,16 @@ const pageContact = () => {
         <div className=" w-full md:w-1/2 bg-white">
           <div>
             <div className="w-full pt-8 md:w-[1200px] m-auto">
-              <h2 className="text-2xl mr-32">Har du en spännade idé? Eller andra frågor?</h2>
-              <p text-xl>Vi hör alltid av oss innom 48 timmar </p>
+              <h2 className="text-2xl mr-32">
+                {inLanguage === 'sv'
+                  ? 'Har du en spännade idé? Eller andra frågor?'
+                  : 'Do you have an exciting idea? Or other questions?'}
+              </h2>
+              <p text-xl>
+                {inLanguage === 'sv'
+                  ? 'Vi hör alltid av oss innom 48 timmar'
+                  : 'We always get back to you within 48 hours'}
+              </p>
             </div>
             <Contact inLanguage={inLanguage} />
           </div>

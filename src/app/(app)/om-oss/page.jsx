@@ -53,9 +53,13 @@ const pageAbout = () => {
               </div>
 
               <div className="flex flex-col gap-2 justify-center items-start w-full md:w-1/2">
-                <h3 className="text-2xl text-[#1B45B4]">OM OSS </h3>
+                <h3 className="text-2xl text-[#1B45B4]">
+                  {inLanguage === 'sv' ? 'OM OSS' : 'ABOUT US'}
+                </h3>
                 <h2 className="text-3xl">
-                  Vi stödjer nystartade samt etablarade företag att få växa i sin verksamhet
+                  {inLanguage === 'sv'
+                    ? 'Vi stödjer nystartade samt etablarade företag att få växa i sin verksamhet'
+                    : 'We support start-ups and established companies to grow their business'}
                 </h2>
                 <div className="flex relative pt-4 h-[40vh] w-full z-50 items-end justify-end md:w-1/2 md:hidden">
                   <div className="absolute top-0 left-0 border-l-8 border-double border-t-8 border-l-orange-600 border-t-orange-600 rounded-tl-lg h-[200px] w-[200px]" />
@@ -70,10 +74,9 @@ const pageAbout = () => {
                   </div>
                 </div>
                 <p>
-                  CreateWeb är ett webbutvecklar företag som nu expandrar snabbt. Vi har stor
-                  ambition till att alltid ligga steget före, så att vi kan tillhandahålla 100% av
-                  vad vi hävdar. Vårt huvudfokus är att skapa bästa webbuplevelsen, med högt
-                  kompetenta utvecklare och designer, för individer och företag.
+                  {inLanguage === 'sv'
+                    ? 'CreateWeb är ett webbutvecklar företag som nu expandrar snabbt. Vi har stor ambition till att alltid ligga steget före, så att vi kan tillhandahålla 100% av vad vi hävdar. Vårt huvudfokus är att skapa bästa webbuplevelsen, med högt kompetenta utvecklare och designer, för individer och företag.'
+                    : 'CreateWeb is a web development company that is now expanding rapidly. We have great ambition to always be one step ahead, so that we can provide 100% of what we claim. Our main focus is to create the best web experience, with highly competent developers and designers, for individuals and businesses.'}
                 </p>
               </div>
             </div>
@@ -192,7 +195,9 @@ const pageAbout = () => {
           <div class="backgroundFixed"></div>
           <div className="sloganContainerFilter">
             <h2 className="test text-3xl text-[#F49B11] text-center font-extrabold py-16 md:py-32 md:text-5xl">
-              VI ÄR EXPERTER PÅ OPTIMALA WEBBLÖSNINGAR
+              {inLanguage === 'sv'
+                ? 'VI ÄR EXPERTER PÅ OPTIMALA WEBBLÖSNINGAR'
+                : 'WE ARE EXPERTS IN OPTIMAL WEB SOLUTIONS'}
             </h2>
           </div>
         </section>
@@ -213,9 +218,13 @@ const pageAbout = () => {
               </div>
 
               <div className="flex flex-col gap-2 justify-start items-start w-full md:w-1/2">
-                <h3 className="text-xl text-[#1B45B4]">OM OSS </h3>
+                <h3 className="text-xl text-[#1B45B4]">
+                  {inLanguage === 'sv' ? 'OM OSS' : 'ABOUT US'}{' '}
+                </h3>
                 <h2 className="text-3xl">
-                  Vi dedikerar oss till att ta er verksamhet till nya höjder!
+                  {inLanguage === 'sv'
+                    ? 'Vi dedikerar oss till att ta er verksamhet till nya höjder!'
+                    : 'We are dedicated to taking your business to new level!'}
                 </h2>
 
                 <div className="flex relative h-[40vh] w-full pt-4 z-50 items-end justify-end md:hidden">

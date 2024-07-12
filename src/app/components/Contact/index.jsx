@@ -54,7 +54,7 @@ const Contact = ({ inLanguage }) => {
           </div>
           <div className="mt-8 flex items-end justify-end w-full">
             <ButtonQuote href="/kontakta" background="#f49a11" icon={false} onClick={sendEmail}>
-              Skicka
+              {inLanguage === 'sv' ? 'Skicka' : 'Send'}
             </ButtonQuote>
           </div>
           {/*
