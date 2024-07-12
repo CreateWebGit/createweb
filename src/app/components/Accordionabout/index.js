@@ -16,7 +16,7 @@ const data = [
 
     text: 'Vi nöjer oss givetvis inte med mindre än de bästa av det bästa till våra kunder! Därför är det avgörande för oss att vara lyhörd för våra kunders behov & ambision, för att sedan kunna ta fram den allra bästa innovativa webblösning ',
     textEng:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis libero eget magna ornare feugiat non at arcu. Phasellus mauris justo, dapibus ut tristique non, condimentum eget nulla. Nunc id tincidunt augue. Suspendisse potenti. Pellentesque vel tortor eros. Sed efficitur, odio at lobortis pretium, risus libero dignissim eros, eget mattis nibh metus eleifend lectus. Proin pulvinar nibh arcu, in varius tellus finibus a. Aenean porta, lacus id porttitor consequat, magna nulla ultrices elit, quis dictum velit risus quis sem.',
+      'Of course, we do not settle for less than the best of the best for our customers! Therefore, it is crucial for us to be responsive to our customers needs & ambitions, in order to then be able to produce the very best innovative web solution',
     height: 'h-[220px] md:h-[120px]',
   },
   {
@@ -26,7 +26,7 @@ const data = [
 
     text: 'För oss är det även väldigt viktigt att gå in och göra en behovsanalys av våra kunders kunder, för att kunna komma med ideer & förslag som direkt gynnar din affärsmässiga tillväxt.',
     textEng:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis libero eget magna ornare feugiat non at arcu. Phasellus mauris justo, dapibus ut tristique non, condimentum eget nulla. Nunc id tincidunt augue. Suspendisse potenti. Pellentesque vel tortor eros. Sed efficitur, odio at lobortis pretium, risus libero dignissim eros, eget mattis nibh metus eleifend lectus. Proin pulvinar nibh arcu, in varius tellus finibus a. Aenean porta, lacus id porttitor consequat, magna nulla ultrices elit, quis dictum velit risus quis sem.',
+      'For us, it is also very important to go in and do a needs analysis of our customers customers, in order to be able to come up with ideas & suggestions that directly benefit your business growth.',
     height: 'h-[220px] md:h-[120px]',
   },
   {
@@ -36,7 +36,7 @@ const data = [
 
     text: 'Vår erfarenhet visar att i de flesta fall finns det ett behov av att vid ett senare tillfälle vidareutveckla en befintlig färdigbyggd webbplats. Sökordsoptimering och marknadsföring brukar också vara ett naturlig efterföljande steg när företag etablerat sin verksamhet på nätet. Vi finns också 24 / 7 ifall något säkerhetsangrepp eller någon annan plötsligt oförutsett händer som skulle riskera att skada din verksamhet på webben.',
     textEng:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis libero eget magna ornare feugiat non at arcu. Phasellus mauris justo, dapibus ut tristique non, condimentum eget nulla. Nunc id tincidunt augue. Suspendisse potenti. Pellentesque vel tortor eros. Sed efficitur, odio at lobortis pretium, risus libero dignissim eros, eget mattis nibh metus eleifend lectus. Proin pulvinar nibh arcu, in varius tellus finibus a. Aenean porta, lacus id porttitor consequat, magna nulla ultrices elit, quis dictum velit risus quis sem.',
+      'Our experience shows that in most cases there is a need to further develop an existing ready-made website at a later date. Keyword optimization and marketing are also usually a natural subsequent step when companies have established their business online. We are also available 24/7 in case a security attack or something else suddenly and unexpectedly happens that would risk damaging your business on the web.',
     height: 'h-[220px] md:h-[210px]',
   },
 ]

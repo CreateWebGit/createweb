@@ -13,7 +13,7 @@ const data = [
 
     text: 'Det är av all vikt för oss att du skall lyckas med din verksamhet på webben! Det ligger i vårt ansvar att att hjälpa dig strategiskt steg för steg att uppnå dina mål. Därför är de av all vikt för oss på createweb att bygga upp förtroendeingivande och långsiktiga kundrelationer med våra kunder. ',
     textEng:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis libero eget magna ornare feugiat non at arcu. Phasellus mauris justo, dapibus ut tristique non, condimentum eget nulla. Nunc id tincidunt augue. Suspendisse potenti. Pellentesque vel tortor eros. Sed efficitur, odio at lobortis pretium, risus libero dignissim eros, eget mattis nibh metus eleifend lectus. Proin pulvinar nibh arcu, in varius tellus finibus a. Aenean porta, lacus id porttitor consequat, magna nulla ultrices elit, quis dictum velit risus quis sem.',
+      'It is of the utmost importance to us that you succeed with your business on the web! It is our responsibility to help you strategically step by step to achieve your goals. Therefore, they are of utmost importance to us at createweb to build trust-inspiring and long-term customer relationships with our customers.',
     height: 'h-[220px] md:h-[160px]',
   },
   {
@@ -23,7 +23,7 @@ const data = [
 
     text: 'För att kunna skräddarsy den bästa optimala lösningen så att du som kund får ut de mest lönsamma utifrån dina visioner & mål, kräver av oss att kunna vara tranparanta & kreativa gälande tekniska och designmässiga lösningar.',
     textEng:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis libero eget magna ornare feugiat non at arcu. Phasellus mauris justo, dapibus ut tristique non, condimentum eget nulla. Nunc id tincidunt augue. Suspendisse potenti. Pellentesque vel tortor eros. Sed efficitur, odio at lobortis pretium, risus libero dignissim eros, eget mattis nibh metus eleifend lectus. Proin pulvinar nibh arcu, in varius tellus finibus a. Aenean porta, lacus id porttitor consequat, magna nulla ultrices elit, quis dictum velit risus quis sem.',
+      'To be able to tailor the best optimal solution so that you as a customer get the most profitable based on your visions & goals, requires us to be transparent & creative regarding technical and design solutions.',
     height: 'h-[170px] md:h-[110px]',
   },
   {
@@ -33,7 +33,7 @@ const data = [
 
     text: 'Varenda minsta detalj har en avgörande betydelse i sin helhet! Vi vill att du som kund ska känna dig trygg att kunna lägga ditt projekt i våra händer med toppkvalitet och hållbarhet över tid, vi behöver därför noggrant granska och vara öppen för att revidera varje steg i vår arbetsprocess.',
     textEng:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis libero eget magna ornare feugiat non at arcu. Phasellus mauris justo, dapibus ut tristique non, condimentum eget nulla. Nunc id tincidunt augue. Suspendisse potenti. Pellentesque vel tortor eros. Sed efficitur, odio at lobortis pretium, risus libero dignissim eros, eget mattis nibh metus eleifend lectus. Proin pulvinar nibh arcu, in varius tellus finibus a. Aenean porta, lacus id porttitor consequat, magna nulla ultrices elit, quis dictum velit risus quis sem.',
+      'Every little detail has a decisive importance in its entirety! We want you as a customer to feel secure in being able to put your project in our hands with top quality and durability over time, we therefore need to carefully review and be open to revising every step of our work process.',
     height: 'h-[220px] md:h-[140px]',
   },
 ]

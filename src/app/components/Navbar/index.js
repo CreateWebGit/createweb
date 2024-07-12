@@ -13,10 +13,6 @@ import { BsTelephoneFill, BsLinkedin, BsFacebook } from 'react-icons/bs'
 import Flag from 'react-world-flags'
 import ReactCountryFlag from 'react-country-flag'
 
-//import Logo from "./logo/HGF_logo_RGB_POS111.png";
-
-import { FaLinkedinIn } from 'react-icons/fa'
-
 import styles from './styles.module.css'
 import { cn } from '@/utils/utils'
 import Contact from './Contact'
@@ -82,7 +78,6 @@ const Navbar = ({ topbar, white }) => {
           <div className="hidden md:flex justify-between h-12 m-auto items-center xl:w-[1200px]">
             <Contact />
             <div className="flex justify-end">
-              {/*
               <div className="pr-5 cursor-pointer" onClick={handleLangSv}>
                 <ReactCountryFlag
                   className="emojiFlag"
@@ -105,7 +100,6 @@ const Navbar = ({ topbar, white }) => {
                   aria-label="United States"
                 />
               </div>
-              */}
             </div>
           </div>
         </div>
@@ -122,7 +116,6 @@ const Navbar = ({ topbar, white }) => {
           <div className="flex items-center">
             <div className="flex relative justify-between items-center z-50 mr-8 md:hidden">
               <>
-                {/*
                 <div
                   className="flex relative justify-between items-center"
                   onClick={() => setShowLanguage(!isShowLanguage)}
@@ -150,7 +143,7 @@ const Navbar = ({ topbar, white }) => {
                   )}
                   <MdKeyboardArrowDown size={25} color={white ? '#000' : '#fff'} />
                 </div>
-                */}
+
                 {isShowLanguage ? (
                   <>
                     <div className="absolute top-[75px] left-[-15px] text-white bg-[#897B8E] p-3 z-50">
@@ -190,7 +183,6 @@ const Navbar = ({ topbar, white }) => {
               </>
             </div>
             <div className="hidden md:flex flex-col">
-              {/*
               <div className="flex justify-end gap-2">
                 <div className="cursor-pointer" onClick={handleLangSv}>
                   <ReactCountryFlag
@@ -215,7 +207,7 @@ const Navbar = ({ topbar, white }) => {
                   />
                 </div>
               </div>
-              */}
+
               <ul className="flex list-none">
                 {navLinks.map((link) => {
                   return (
@@ -295,7 +287,7 @@ const Navbar = ({ topbar, white }) => {
                                   white ? 'text-slate-600' : 'text-white',
                                 )}
                               >
-                                {link.name}
+                                {inLanguage === 'sv' ? link.name : link.nameEng}
                               </a>
                             </Link>
                           </li>

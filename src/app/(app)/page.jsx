@@ -71,27 +71,11 @@ export default function Home() {
               </p>
               <div className="flex justify-end w-full gap-4 mt-4">
                 <ButtonQuote href="/kontakta" background="#f49a11">
-                  Kontakta
+                  {inLanguage === 'sv' ? 'Kontakta' : 'Contact'}
                 </ButtonQuote>
                 <ButtonQuote href="/om-oss" background="transparent">
-                  Om Oss
+                  {inLanguage === 'sv' ? 'Om oss' : 'About us'}
                 </ButtonQuote>
-
-                {/*
-                <Link
-                  href={'/kontakta'}
-                  className="block bg-orange-600 rounded-md shadow-xl text-white cursor-pointer text-sm m-1 py-2 px-3 text-center"
-                >
-                  Kontakta
-                </Link>
-
-                <Link
-                  href={'/om-oss'}
-                  className=" bg-transparent border rounded-md shadow-xl text-white cursor-pointer text-sm m-1 py-2 px-3 text-center"
-                >
-                  Om oss
-                </Link>
-                */}
               </div>
             </div>
           </div>
@@ -116,20 +100,13 @@ export default function Home() {
                 ? 'Createweb erbjuder professionell webbutveckling för företag i Stockholm och i hela Sverige. Vår erfarna webbutvecklare har kompetens att skapa skräddarsydda lösningar som uppfyller dina specifika behov.'
                 : 'Createweb offers professional web development for companies in Stockholm and throughout Sweden. Our experienced web developers have the skills to create customized solutions that meet your specific needs.'}
             </p>
-            <div className="block">
-              <Link
-                href={'/kontakta'}
-                className="bg-gradient-to-r from-[#9F3CD7] to-[#BC47DD] rounded-md shadow-xl text-white cursor-pointer text-sm m-1 py-2 px-3 text-center"
-              >
-                Kontakta
-              </Link>
-
-              <Link
-                href={'/om-oss'}
-                className=" bg-transparent border rounded-md shadow-xl text-white cursor-pointer text-sm m-1 py-2 px-3 text-center"
-              >
-                Om oss
-              </Link>
+            <div className="flex gap-2">
+              <ButtonQuote href="/kontakta" background="#f49a11">
+                {inLanguage === 'sv' ? 'Kontakta' : 'Contact'}
+              </ButtonQuote>
+              <ButtonQuote href="/om-oss" background="transparent">
+                {inLanguage === 'sv' ? 'Om oss' : 'About us'}
+              </ButtonQuote>
             </div>
           </div>
         </div>
@@ -154,12 +131,11 @@ export default function Home() {
         <section className="relative w-full flex flex-col justify-center items-center z-40 my-5">
           <Image className="absolute left-0 mt-[-50px] ml-[-150px] md:ml-0" src={patternDark} />
           <Image className="absolute left-0 ml-[-150px] md:ml-0" src={patternLight} />
-          {inLanguage === 'sv' ? (
-            <h2>Teknologi & Plattform vi föredrar</h2>
-          ) : (
-            <h2>Technology & Platform we prefer</h2>
-          )}
-
+          <h2 className="text-xl font-bold py-8">
+            {inLanguage === 'sv'
+              ? 'Teknologi & Plattform vi föredrar'
+              : 'Technology & Platform we prefer'}
+          </h2>
           <div className="flex justify-center items-center h-10 m-0 p-0 z-50">
             <Link href="https://nextjs.org" target="_blank">
               <div className="flex flex-row justify-center items-center mx-3 md:mx-5 bg-white shadow-md z-50 p-2">
@@ -182,7 +158,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-white">
+        <section className="bg-white mt-16">
           <div className=" w-full md:w-[1200px] m-auto px-4">
             <div className="relative flex flex-col-reverse mx-0 pb-8 md:flex-row gap-4 md:mx-3 md:pb-0">
               <div className="hidden relative h-[80vh] w-full z-50 items-end justify-end md:w-1/2 md:flex">
@@ -201,7 +177,9 @@ export default function Home() {
               <div className="flex flex-col gap-2 justify-center items-start w-full md:w-1/2">
                 <h3 className="text-2xl text-[#1B45B4]">OM OSS </h3>
                 <h2 className="text-3xl">
-                  Vi stödjer nystartade samt etablarade företag att få växa i sin verksamhet
+                  {inLanguage === 'sv'
+                    ? 'Vi stödjer nystartade samt etablarade företag att få växa i sin verksamhet'
+                    : 'We support start-ups and established companies to grow their business'}
                 </h2>
                 <div className="flex relative pt-4 h-[40vh] w-full z-50 items-end justify-end md:w-1/2 md:hidden">
                   <div className="absolute top-0 left-0 border-l-8 border-double border-t-8 border-l-[#f49a11] border-t-[#f49a11] rounded-tl-lg h-[200px] w-[200px]" />
@@ -216,23 +194,14 @@ export default function Home() {
                   </div>
                 </div>
                 <p>
-                  CreateWeb är ett webbutvecklar företag som nu expandrar snabbt. Vi har stor
-                  ambition till att alltid ligga steget före, så att vi kan tillhandahålla 100% av
-                  vad vi hävdar. Vårt huvudfokus är att skapa bästa webbuplevelsen, med högt
-                  kompetenta utvecklare och designer, för individer och företag.
+                  {inLanguage === 'sv'
+                    ? 'CreateWeb är ett webbutvecklar företag som nu expandrar snabbt. Vi har stor ambition till att alltid ligga steget före, så att vi kan tillhandahålla 100% av vad vi hävdar. Vårt huvudfokus är att skapa bästa webbuplevelsen, med högt kompetenta utvecklare och designer, för individer och företag.'
+                    : 'CreateWeb is a web development company that is now expanding rapidly. We have great ambition to always be one step ahead, so that we can provide 100% of what we claim. Our main focus is to create the best web experience, with highly competent developers and designers, for individuals and businesses.'}
                 </p>
                 <div className="flex flex-col justify-end items-end my-4 w-full">
                   <ButtonQuote href="/om-oss" background="#f49a11">
-                    Läs mer
+                    {inLanguage === 'sv' ? 'Läs mer' : 'Read more'}
                   </ButtonQuote>
-                  {/*
-                  <Link
-                    href={'/om-oss'}
-                    className=" inline-block bg-orange-600 rounded-md shadow-xl text-white cursor-pointer text-sm m-1 py-2 px-3 text-center"
-                  >
-                    Läs mer
-                  </Link>
-                  */}
                 </div>
               </div>
             </div>
@@ -247,8 +216,14 @@ export default function Home() {
 
         <section className="w-full px-4 py-12 bg-gradient-to-b from-[rgba(255,255,255,1)] to-[rgba(248,248,248,1)]">
           <div className="w-full md:w-[1200px] m-auto">
-            <h3 className="text-xl text-[#1B45B4]">TJÄNSTER</h3>
-            <h2 className="text-2xl mb-5">Vi är hängivna till den bästa webbupplevelsen</h2>
+            <h3 className="text-xl text-[#1B45B4]">
+              {inLanguage === 'sv' ? 'TJÄNSTER' : 'SERVICES'}
+            </h3>
+            <h2 className="text-2xl mb-5">
+              {inLanguage === 'sv'
+                ? 'Vi är hängivna till den bästa webbupplevelsen'
+                : 'We are dedicated to the best web experience'}
+            </h2>
             <div className="block md:flex gap-8 justify-between">
               <div className="h-[250px] rounded-lg text-center text-white p-12 mb-8 md:mb-0 bg-[#1C2C99]">
                 <Image src={iconDevelopment} className="m-auto" />
@@ -258,17 +233,7 @@ export default function Home() {
                 <p>
                   {inLanguage === 'sv'
                     ? 'Skapar bästa webbuplevelsen, med högt kompetenta utvecklare och designer, för individer och företag'
-                    : 'Provide best website design and development layouts with advanced plugins, frameworks, and multiple variant themes.'}
-                </p>
-              </div>
-
-              <div className="h-[250px] rounded-lg text-center text-slate-700 p-12 mb-8 md:mb-0 bg-white">
-                <Image src={iconCMS} className="m-auto" />
-                <h3 className="text-xl mt-1">CMS</h3>
-                <p>
-                  {inLanguage == 'sv'
-                    ? 'Effektivisera din process gällande innehållshantering med vårat robusta CMS, skräddarsytt för att möta just dina unika affärsbehov.'
-                    : 'Streamline your content management process with our robust CMS, tailored to meet your unique business needs.'}
+                    : 'Creating the best web experience, with highly skilled developers and designers, for individuals and businesses'}
                 </p>
               </div>
 
@@ -281,6 +246,16 @@ export default function Home() {
                   {inLanguage == 'sv'
                     ? 'Se till att komma toprankad bland sökord som gynnar just din veksamhet på Google med hjälp av sökordsoptimering'
                     : 'Make sure to get top ranking among keywords that benefit your activity on Google with search engine optimisation'}
+                </p>
+              </div>
+
+              <div className="h-[250px] rounded-lg text-center text-slate-700 p-12 mb-8 md:mb-0 bg-white">
+                <Image src={iconCMS} className="m-auto" />
+                <h3 className="text-xl mt-1">{inLanguage === 'sv' ? 'SUPPORT' : 'SUPPORT'}</h3>
+                <p>
+                  {inLanguage == 'sv'
+                    ? 'Det finns ingen anledning för dig att ligga sömnlös om nätterna för eventuella säkerhetsangrepp eller att din webbplats plötsligt av någon anledning inte fungerar längre optimalt. Vi bevakar det åt dig!'
+                    : 'There is no reason for you to lie sleepless at night for potential security attacks or for your website to suddenly no longer function optimally for any reason. We monitor it for you!'}
                 </p>
               </div>
             </div>
@@ -354,8 +329,12 @@ export default function Home() {
               className="absolute h-[1096px] bottom-20 m-auto md:hidden"
               src={timelinePicMobile}
             />
-            <h4 className="text-[#1B45B4] text-xl">PROCESS</h4>
-            <h2 className="text-2xl font-bold">Här är vår arbetsprocess</h2>
+            <h4 className="text-[#1B45B4] text-xl">
+              {inLanguage === 'sv' ? 'PROCESS' : 'PROCESS'}
+            </h4>
+            <h2 className="text-2xl font-bold">
+              {inLanguage === 'sv' ? 'Här är vår arbetsprocess' : 'Here is our work process'}
+            </h2>
             <div className="absolute flex top-[200px] left-[20px] md:top-[250px] md:left-[30px] md:block">
               <h3 className="hidden relative mt-8 mb-1 text-2xl z-50 md:block">Steg 1</h3>
               <div className="w-[65px] h-[65px] border border-[#FFCF85] rounded-full bg-white flex justify-center items-center">
@@ -365,12 +344,18 @@ export default function Home() {
                 <h2 className="absolute inline-block mt-[-30px] top-0 right-0 text-[182px] font-bold text-[#FAE3C3] z-40 md:mt-[-60px]">
                   1
                 </h2>
-                <h3 className="relative mt-7 mb-1 text-2xl font-bold">
-                  Planera och <br /> Möta kund
+                <h3
+                  style={{ whiteSpace: 'pre-line' }}
+                  className="relative mt-7 mb-1 text-2xl font-bold"
+                >
+                  {inLanguage === 'sv'
+                    ? 'Planera och \n Möta kund'
+                    : 'Plan and \n Meet the customer'}
                 </h3>
                 <p className="relative w-48 text-sm z-50">
-                  Definiera projektets mål och målsättningar. Sammanställa Kravspecifikation från
-                  intressenter och kunder.
+                  {inLanguage === 'sv'
+                    ? 'Definiera projektets mål och målsättningar. Sammanställa Kravspecifikation från intressenter och kunder.'
+                    : 'Define the projects goals and objectives. Compile requirements specification from stakeholders and customers.'}
                 </p>
               </div>
             </div>
@@ -380,12 +365,16 @@ export default function Home() {
                 <div className="w-[21px] h-[21px] bg-[#F5A42A] rounded-full"></div>
               </div>
               <div className="w-56 -top-6 relative z-50 ml-4 md:ml-0">
-                <h3 className="relative mt-7 mb-1 text-2xl font-bold z-50">
-                  Designa och <br /> Trådskissa
+                <h3
+                  style={{ whiteSpace: 'pre-line' }}
+                  className="relative mt-7 mb-1 text-2xl font-bold z-50"
+                >
+                  {inLanguage === 'sv' ? 'Designa och \n Skissa' : 'Design and \n Sketch'}
                 </h3>
                 <p className="relative w-48 text-sm z-50">
-                  Designa & Skissa på sidor efter övenskommelse. Vi håller alltid en tät kontakt med
-                  kund!
+                  {inLanguage === 'sv'
+                    ? 'Designa & Skissa på sidor efter övenskommelse. Vi håller alltid en tät kontakt med dig som kund!'
+                    : 'Design & Sketch pages as agreed. We always keep in close contact with you as a customer!'}
                 </p>
                 <h2 className="absolute inline-block mt-[-30px] top-0 -right-4 text-[182px] font-bold text-[#FAE3C3] z-40 md:mt-[-60px]">
                   2
@@ -398,11 +387,18 @@ export default function Home() {
                 <div className="w-[21px] h-[21px] bg-[#F5A42A] rounded-full"></div>
               </div>
               <div className="w-56 -top-6 relative z-50 ml-4 md:ml-0">
-                <h3 className="relative mt-7 mb-1 text-2xl font-bold z-50">
-                  Utveckla och <br /> Skapa innehåll
+                <h3
+                  style={{ whiteSpace: 'pre-line' }}
+                  className="relative mt-7 mb-1 text-2xl font-bold z-50"
+                >
+                  {inLanguage === 'sv'
+                    ? 'Utveckla och \n Skapa innehåll'
+                    : 'Develop and \n Create content'}
                 </h3>
                 <p className="relative w-48 text-sm z-50">
-                  Utvecklar funktionaliteten för projektet samt skapar design och innehåll.
+                  {inLanguage === 'sv'
+                    ? 'Utvecklar projektets funktionalitet, samt skapar design och innehåll.'
+                    : 'Develops the projects functionality, as well as creates design and content.'}
                 </p>
                 <h2 className="absolute inline-block mt-[-30px] top-0 -right-8 text-[182px] font-bold text-[#FAE3C3] z-40 md:mt-[-60px]">
                   3
@@ -415,13 +411,16 @@ export default function Home() {
                 <div className="w-[21px] h-[21px] bg-[#F5A42A] rounded-full"></div>
               </div>
               <div className="w-56 -top-6 relative z-50 ml-4 md:ml-0">
-                <h3 className="relative mt-7 mb-1 text-2xl font-bold z-50">
-                  Testa och <br />
-                  installera
+                <h3
+                  style={{ whiteSpace: 'pre-line' }}
+                  className="relative mt-7 mb-1 text-2xl font-bold z-50"
+                >
+                  {inLanguage === 'sv' ? 'Testa och \n Installera' : 'Test and \n Install'}
                 </h3>
                 <p className="relative w-48 text-sm z-50">
-                  Vi testar noga applikation och återkopplar till kund, för att sedan installera &
-                  lansera projektet
+                  {inLanguage === 'sv'
+                    ? 'Vi testar noga applikation och återkopplar till kund, för att sedan installera & lansera projektet'
+                    : 'We carefully test the application and give feedback to the customer, then install & launch the project'}
                 </p>
                 <h2 className="absolute inline-block mt-[-30px] top-0 right-0 text-[182px] font-bold text-[#FAE3C3] z-40 md:mt-[-60px]">
                   4
