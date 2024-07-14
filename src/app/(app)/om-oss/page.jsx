@@ -62,7 +62,7 @@ const pageAbout = () => {
                     : 'We support start-ups and established companies to grow their business'}
                 </h2>
                 <div className="flex relative pt-4 h-[40vh] w-full z-50 items-end justify-end md:w-1/2 md:hidden">
-                  <div className="absolute top-0 left-0 border-l-8 border-double border-t-8 border-l-orange-600 border-t-orange-600 rounded-tl-lg h-[200px] w-[200px]" />
+                  <div className="absolute top-0 left-0 border-l-8 border-double border-t-8 border-l-[#F49B11] border-t-[#F49B11] rounded-tl-lg h-[200px] w-[200px]" />
                   <div className="relative w-full h-full mx-4 md:h-[96%] md:w-[96%] md:mx-0">
                     <Image
                       src={aboutImage}
@@ -228,7 +228,7 @@ const pageAbout = () => {
                 </h2>
 
                 <div className="flex relative h-[40vh] w-full pt-4 z-50 items-end justify-end md:hidden">
-                  <div className="absolute top-0 left-0 border-l-8 border-double border-t-8 border-l-orange-600 border-t-orange-600 rounded-tl-lg h-[200px] w-[200px]" />
+                  <div className="absolute top-0 left-0 border-l-8 border-double border-t-8 border-l-[#F49B11] border-t-[#F49B11] rounded-tl-lg h-[200px] w-[200px]" />
                   <div className="relative w-full h-full mx-4">
                     <Image
                       src={newHeight}

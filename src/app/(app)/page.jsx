@@ -15,6 +15,10 @@ import profilePic from '../../../public/assets/HeroComputor1111111.png'
 import iconLandingpage from '../../../public/assets/iconLandingpage.png'
 import iconCMS from '../../../public/assets/iconCMS.png'
 import iconDevelopment from '../../../public/assets/iconDevelopment.png'
+
+import { IoIosGlobe } from 'react-icons/io'
+import { FaSearchDollar } from 'react-icons/fa'
+
 import patternDark from '../../../public/assets/PaternDark.png'
 import patternLight from '../../../public/assets/PaternLight.png'
 import brandNextJS from '../../../public/assets/brandNextjs.png'
@@ -175,7 +179,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col gap-2 justify-center items-start w-full md:w-1/2">
-                <h3 className="text-2xl text-[#1B45B4]">
+                <h3 className="text-xl text-[#1B45B4] font-bold">
                   {inLanguage === 'sv' ? 'OM OSS' : 'ABOUT US'}
                 </h3>
                 <h2 className="text-3xl">
@@ -216,9 +220,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="w-full px-4 py-12 bg-gradient-to-b from-[rgba(255,255,255,1)] to-[rgba(248,248,248,1)]">
+        <section className="w-full px-4 py-8 bg-gradient-to-b from-[rgba(255,255,255,1)] to-[#eeeded]">
           <div className="w-full md:w-[1200px] m-auto">
-            <h3 className="text-xl text-[#1B45B4]">
+            <h3 className="text-xl text-[#1B45B4] font-bold">
               {inLanguage === 'sv' ? 'TJÄNSTER' : 'SERVICES'}
             </h3>
             <h2 className="text-2xl mb-5">
@@ -227,38 +231,52 @@ export default function Home() {
                 : 'We are dedicated to the best web experience'}
             </h2>
             <div className="block md:flex gap-8 justify-between">
-              <div className="h-[250px] rounded-lg text-center text-white p-12 mb-8 md:mb-0 bg-[#1C2C99]">
-                <Image src={iconDevelopment} className="m-auto" />
+              <div className="flex-grow flex-shrink basis-0 h-[320px] rounded-lg text-center text-white p-12 mb-8 md:mb-0 bg-[#1C2C99]">
+                <div className="p-4 bg-white rounded-md inline-block mb-4">
+                  <IoIosGlobe color="#087CDF" size={36} />
+                </div>
                 <h3 className="text-xl mt-1">
                   {inLanguage === 'sv' ? 'Webbutveckling' : 'Webdevelopment'}
                 </h3>
-                <p>
-                  {inLanguage === 'sv'
-                    ? 'Skapar bästa webbuplevelsen, med högt kompetenta utvecklare och designer, för individer och företag'
-                    : 'Creating the best web experience, with highly skilled developers and designers, for individuals and businesses'}
-                </p>
+                <div className=" h-[120px] flex flex-col justify-center mb-4">
+                  <p className="">
+                    {inLanguage === 'sv'
+                      ? 'Skapar bästa webbuplevelsen, med högt kompetenta utvecklare och designer, för individer och företag'
+                      : 'Creating the best web experience, with highly skilled developers and designers, for individuals and businesses'}
+                  </p>
+                </div>
               </div>
 
-              <div className="h-[250px] rounded-lg text-center text-slate-700 p-12  bg-white">
-                <Image src={iconLandingpage} className="m-auto" />
+              <div className=" flex-grow flex-shrink basis-0 h-[320px] rounded-lg text-center text-slate-700 p-12 mb-8 md:mb-0  bg-white">
+                {/* <Image src={iconLandingpage} className="m-auto" /> */}
+                <div className="p-4 bg-[#1C2C99] rounded-md inline-block mb-4">
+                  <FaSearchDollar color="#fff" size={36} />
+                </div>
                 <h3 className="text-xl mt-1">
                   {inLanguage === 'sv' ? 'Sökordsoptimering' : 'Search Engine Optimization'}
                 </h3>
-                <p>
-                  {inLanguage == 'sv'
-                    ? 'Se till att komma toprankad bland sökord som gynnar just din veksamhet på Google med hjälp av sökordsoptimering'
-                    : 'Make sure to get top ranking among keywords that benefit your activity on Google with search engine optimisation'}
-                </p>
+                <div className=" h-[120px] flex flex-col justify-center mb-4">
+                  <p>
+                    {inLanguage == 'sv'
+                      ? 'Expandera din kundkrets & låt oss topranka sökord som gynnar just din veksamhet på Google'
+                      : 'Make sure to get top ranking among keywords that benefit your activity on Google with search engine optimisation'}
+                  </p>
+                </div>
               </div>
 
-              <div className="h-[250px] rounded-lg text-center text-slate-700 p-12 mb-8 md:mb-0 bg-white">
-                <Image src={iconCMS} className="m-auto" />
+              <div className="flex-grow flex-shrink basis-0 h-[320px] rounded-lg text-center text-slate-700 p-12 bg-white">
+                {/* <Image src={iconCMS} className="m-auto" /> */}
+                <div className="p-4 bg-[#1C2C99] rounded-md inline-block mb-4">
+                  <IoIosGlobe color="#fff" size={36} />
+                </div>
                 <h3 className="text-xl mt-1">{inLanguage === 'sv' ? 'SUPPORT' : 'SUPPORT'}</h3>
-                <p>
-                  {inLanguage == 'sv'
-                    ? 'Det finns ingen anledning för dig att ligga sömnlös om nätterna för eventuella säkerhetsangrepp eller att din webbplats plötsligt av någon anledning inte fungerar längre optimalt. Vi bevakar det åt dig!'
-                    : 'There is no reason for you to lie sleepless at night for potential security attacks or for your website to suddenly no longer function optimally for any reason. We monitor it for you!'}
-                </p>
+                <div className=" h-[120px] flex flex-col justify-center mb-4">
+                  <p>
+                    {inLanguage == 'sv'
+                      ? 'Bespara sömnlösa nätter och låt oss säkerställa att webbsidan fungerar optimalt över tid.'
+                      : 'There is no reason for you to lie sleepless at night for potential security attacks or for your website to suddenly no longer function optimally for any reason. We monitor it for you!'}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -267,8 +285,8 @@ export default function Home() {
           <div className="flex flex-col-reverse md:flex md:flex-row md:w-[1200px] m-auto">
             <div className="w-full md:w-1/2 pr-8">
               <div className="hidden md:block">
-                <h3 className="text-xl text-[#1B45B4]">
-                  {inLanguage === 'sv' ? 'OM OSS' : 'ABOUT US'}
+                <h3 className="text-xl text-[#1B45B4] font-bold">
+                  {inLanguage === 'sv' ? 'GARANTERAR' : 'GUARANTEE'}
                 </h3>
                 <h2 className="text-2xl">
                   {inLanguage === 'sv' ? 'Varför vill du väljer du oss?' : 'Wy Choose Us?'}
@@ -295,8 +313,8 @@ export default function Home() {
 
               <div className="relative">
                 <div className="block mb-8 md:hidden">
-                  <h3 className="text-xl text-[#1B45B4]">
-                    {inLanguage === 'sv' ? 'OM OSS' : 'ABOUT US'}
+                  <h3 className="text-xl text-[#1B45B4] font-bold">
+                    {inLanguage === 'sv' ? 'GARANTERAR' : 'GUARANTEE'}
                   </h3>
                   <h2 className="text-2xl">
                     {inLanguage === 'sv' ? 'Varför vill du väljer du oss?' : 'Wy Choose Us?'}
@@ -331,7 +349,7 @@ export default function Home() {
               className="absolute h-[1096px] bottom-20 m-auto md:hidden"
               src={timelinePicMobile}
             />
-            <h4 className="text-[#1B45B4] text-xl">
+            <h4 className="text-[#1B45B4] text-xl font-bold">
               {inLanguage === 'sv' ? 'PROCESS' : 'PROCESS'}
             </h4>
             <h2 className="text-2xl font-bold">
