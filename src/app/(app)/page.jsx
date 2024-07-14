@@ -48,7 +48,7 @@ export default function Home() {
       <div className="heroContainer pt-[100px] px-4 md:pt-[200px] h-[110vh] md:h-[90vh] z-50">
         <div className="block flex-row-reverse md:flex">
           <div className="w-full md:w-1/2">
-            <h1 className="text-2xl text-center md:text-6xl md:text-left font-bold text-white">
+            <h1 className="text-4xl text-center md:text-6xl md:text-left font-bold text-white">
               {inLanguage === 'sv' ? (
                 <>
                   Lås upp kraften av <br />
@@ -94,7 +94,7 @@ export default function Home() {
             />
           </div>
           <div className="block md:hidden">
-            <h2 className="text-xl my-4 text-center md:text-2xl text-white">
+            <h2 className="text-xl my-4 md:text-2xl text-white">
               {inLanguage === 'sv'
                 ? 'Skapa banbrytande digitala upplevelser'
                 : 'Crafting Cutting-Edge Digital Experiences'}
@@ -303,7 +303,7 @@ export default function Home() {
 
             <div className="w-full md:w-1/2">
               <div className="hidden">
-                <h2>{inLanguage === 'sv' ? 'Varför vill du väljer du oss?' : 'Wy Choose Us?'}</h2>
+                <h2>{inLanguage === 'sv' ? 'Varför välja oss?' : 'Wy Choose Us?'}</h2>
                 <p>
                   {inLanguage === 'sv'
                     ? 'Vad som gör oss unika!'
@@ -317,7 +317,7 @@ export default function Home() {
                     {inLanguage === 'sv' ? 'GARANTERAR' : 'GUARANTEE'}
                   </h3>
                   <h2 className="text-2xl">
-                    {inLanguage === 'sv' ? 'Varför vill du väljer du oss?' : 'Wy Choose Us?'}
+                    {inLanguage === 'sv' ? 'Varför välja oss?' : 'Wy Choose Us?'}
                   </h2>
                   <p>
                     {inLanguage === 'sv'

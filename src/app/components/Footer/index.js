@@ -24,8 +24,8 @@ const Footer = ({ inLanguage }) => {
           </h2>
           <p style={{ whiteSpace: 'pre-line' }} className="mt-4 mb-8">
             {inLanguage === 'sv'
-              ? 'Gå från professionell verksamhet till ett bolag. \n Vi täcker upp dig!'
-              : 'From professional business to enterprise. \n We got you covered!'}
+              ? 'Gå från verksamhet till ett professionelt bolag. \n Vi täcker upp dig!'
+              : 'From business to professionell enterprise. \n We got you covered!'}
           </p>
           <ButtonQuote href="/kontakta" background="#f49a11">
             {inLanguage === 'sv' ? 'Begär Offert' : 'Request quotation'}
