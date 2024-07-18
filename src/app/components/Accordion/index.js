@@ -21,7 +21,7 @@ const data = [
     title: 'Dedikerat Kreativa',
     titleEng: 'Dedicated Creativity',
 
-    text: 'För att kunna skräddarsy den bästa optimala lösningen så att du som kund får ut de mest lönsamma utifrån dina visioner & mål, kräver av oss att kunna vara tranparanta & kreativa gälande tekniska och designmässiga lösningar.',
+    text: 'För att kunna skräddarsy den bästa optimala lösningen så att du som kund får ut de mest lönsamma utifrån dina visioner & mål, kräver de av oss att kunna vara tranparanta & kreativa gällande tekniska och designmässiga lösningar.',
     textEng:
       'To be able to tailor the best optimal solution so that you as a customer get the most profitable based on your visions & goals, requires us to be transparent & creative regarding technical and design solutions.',
     height: 'h-[170px] md:h-[110px]',

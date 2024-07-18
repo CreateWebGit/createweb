@@ -2,7 +2,8 @@ import Image from 'next/image'
 
 import ButtonQuote from '../ButtonQuote'
 
-import logo from '../../../../public/logo/LogoWhite.png'
+import logo from '../../../../public/logo/Logo.png'
+import Link from 'next/link'
 
 //import { UilCalling } from '@iconscout/react-unicons'
 //import { UilEnvelopes } from '@iconscout/react-unicons'
@@ -34,28 +35,39 @@ const Footer = ({ inLanguage }) => {
       </div>
       <div className="w-full md:w-[1200px] m-auto px-4">
         <div className="h-[50px] w-[180px] absolute -right-4 mt-[-175px] md:mt-[-150px] rotate-[-18deg] sm:rotate-[-8deg] md:rotate-[-4deg] bg-[#00E1FF] z-50"></div>
-        <div className="mb-8 mt-8">
-          <Image className="m-auto md:m-0" src={logo} width={300} height={80} />
-        </div>
-        <div className="inline-block md:flex m-auto">
+
+        <div className="inline-block justify-start items-start mt-4 md:flex m-auto">
           <div className="flex-grow-[6]">
-            <p className="inline-block w-full text-center md:text-left md:w-[500px]">
+            <div className="mb-8">
+              <Image className="m-auto md:m-0" src={logo} width={300} height={200} />
+            </div>
+            <p className="inline-block w-full text-center text-xl md:text-left md:w-[500px]">
               {inLanguage === 'sv'
                 ? 'Createweb erbjuder professionell webbutveckling för företag i Stockholm och i hela Sverige. Vår erfarna webbutvecklare har kompetens att skapa skräddarsydda lösningar som uppfyller dina specifika behov.'
                 : 'Createweb offers professional web development for companies in Stockholm and throughout Sweden. Our experienced web developers have the skills to create customized solutions that meet your specific needs.'}
             </p>
           </div>
 
-          <div className="w-44 my-8 text-center md:flex-grow-[3] block m-auto">
-            <h3>{inLanguage === 'sv' ? 'Service' : 'Service'}</h3>
-            <h4>{inLanguage === 'sv' ? 'Webbside utveckling' : 'Website Development'}</h4>
-            <h4>{inLanguage === 'sv' ? 'E-handel lösningar' : 'E-commerce Development'}</h4>
-            <h4>{inLanguage === 'sv' ? 'Apputveckling' : 'Mobile App Development'}</h4>
+          <div className="w-44 text-center my-4 md:mt-12 md:text-left md:flex-grow-[3] block m-auto">
+            <h3 className="text-2xl  mb-2">{inLanguage === 'sv' ? 'Service' : 'Service'}</h3>
+            <h4>{inLanguage === 'sv' ? 'Webbutveckling' : 'Web development'}</h4>
+            <h4>{inLanguage === 'sv' ? 'Design & UX' : 'Design & UX'}</h4>
             <h4>{inLanguage === 'sv' ? 'Sökoptimering (SEO)' : 'Search optimation'}</h4>
+            <h4>{inLanguage === 'sv' ? 'Digital marknadsföring' : 'Digital marketing'}</h4>
+            <h4>{inLanguage === 'sv' ? 'Webb Support' : 'Web Support'}</h4>
           </div>
-          <div className=" w-44 text-center block md:flex-grow-[3] m-auto">
-            <h3>{inLanguage === 'sv' ? 'Annat' : 'Others'}</h3>
-            <h4>{inLanguage === 'sv' ? 'Om oss' : 'About us'}</h4>
+          <div className="text-center block items-stretch h-full md:mt-12 md:text-left md:flex-grow-[3]">
+            <h3 className="text-2xl  mb-2">{inLanguage === 'sv' ? 'Navigering' : 'Navigation'}</h3>
+
+            <Link className="block" href={'/om-oss'}>
+              {inLanguage === 'sv' ? 'Om oss' : 'About us'}
+            </Link>
+            <Link className="block" href={'/expertis'}>
+              {inLanguage === 'sv' ? 'Expertis' : 'Expertise'}
+            </Link>
+            <Link className="block" href={'/kontakta'}>
+              {inLanguage === 'sv' ? 'Kontakta oss' : 'Contakt us'}
+            </Link>
           </div>
         </div>
       </div>

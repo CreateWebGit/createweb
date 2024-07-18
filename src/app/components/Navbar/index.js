@@ -105,12 +105,13 @@ const Navbar = ({ topbar, white }) => {
         </div>
 
         <div className="flex justify-between items-center m-auto h-6 md:h-12 lg:w-[1200px] ">
-          <Link href={'/'} className="relative w-44 h-14 md:w-52 md:h-16">
+          <Link href={'/'} className="relative ">
             <Image
-              className="logo"
-              src={white ? '/logo/LogoBlack.png' : '/logo/LogoWhite.png'}
+              className=" "
+              src={white ? '/logo/Logo.png' : '/logo/Logo.png'}
               alt="loggo för webbutvecklare"
-              layout="fill"
+              width={300}
+              height={200}
             />
           </Link>
           <div className="flex items-center">
@@ -325,7 +326,7 @@ const Navbar = ({ topbar, white }) => {
           <Link href={'/'} className="relative w-44 h-14 mt-4 ml-8">
             <Image
               className="logo"
-              src="/logo/LogoBlack.png"
+              src="/logo/Logo.png"
               alt="loggo för webbutvecklare"
               layout="fill"
             />

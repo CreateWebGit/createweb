@@ -4,8 +4,8 @@
 
 .heroContainer {
   background-color: #1c2893;
-  background-image: radial-gradient(circle at 0% 0%, #2296e5, transparent 30%),
-    radial-gradient(circle at 0% 100%, #1e94e5, transparent 10%);
+  background-image: radial-gradient(circle at 0% 0%, #2296e5, transparent 50%),
+    radial-gradient(circle at 0% 100%, #1e94e5, transparent 30%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
 
