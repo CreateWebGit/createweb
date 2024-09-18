@@ -45,7 +45,7 @@ export default function Home() {
 
       <Navbar white={false} />
 
-      <div className="heroContainer pt-[100px] px-4 md:pt-[200px] h-[110vh] md:h-[90vh] z-50">
+      <div className="heroContainer pt-[100px] px-4 md:pt-[200px] h-[130vh] md:h-[110vh] z-50">
         <div className="block flex-row-reverse md:flex">
           <div className="w-full md:w-1/2">
             <h1 className="text-4xl text-center md:text-6xl md:text-left font-bold text-white">
